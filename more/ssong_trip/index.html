@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>ssong trip</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/rollmain.js"></script>
+	
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 헤더 -->
+		<header id="header">
+			<!-- ****퀵에서 맨 위로 올라오는 아이디**** -->
+			<div id="layout0" class="header_area box_inner clear">
+				<!-- 로고 -->
+				<h1>
+					<!-- 로고 -->
+					<a href="index.html">SSong trip</a>
+
+					<!-- 메뉴열기 버튼(햄버거) -->
+					<p class="openMOgnb">
+						<a href="#">
+							<b class="hdd">메뉴열기</b>
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</p>
+				</h1>
+
+				<!--로그인&회원가입 네비게이션 -->
+				<div class="header_cont">
+					<!-- 로그인&회원가입 -->
+					<ul class="util clear">
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="join.html">회원가입</a></li>
+					</ul>
+
+					<!-- 네비게이션 -->
+					<nav>
+						<ul class="gnb clear">
+							<li>
+								<a href="javascript:;" class="openAll1">여행정보</a>
+								<div class="gnb_depth gnb_depth2_1">
+									<ul class="submenu_list">
+										<li><a href="javascript:;">국내</a></li>
+										<li><a href="javascript:;">해외</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="openAll2">고객센터</a>
+								<div class="gnb_depth gnb_depth2_2">
+									<ul class="submenu_list">
+										<li><a href="notice_list.html">공지사항</a></li>
+										<li><a href="javascript:;">문의하기</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="openAll3">상품투어</a>
+								<div class="gnb_depth gnb_depth2_3">
+									<ul class="submenu_list">
+										<li><a href="program.html">프로그램 소개</a></li>
+										<li><a href="javascript:;">여행자료</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="openAll4">티켓/가이드</a>
+								<div class="gnb_depth gnb_depth2_4">
+									<ul class="submenu_list">
+										<li><a href="javascript:;">항공</a></li>
+										<li><a href="javascript:;">호텔</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<!-- ****닫기 배경이미지***** -->
+					<p class="closePop"><a href="javascript:;">닫기</a></p>
+				</div><!--  <div class="header_cont"> -->
+			</div> <!-- <div class="header_area box_inner clear"> -->
+		</header>
+
+		<!-- 슬라이드 -->
+		<div id="container">
+			<!-- 반응형 pc버전 -->
+			<div class="main_rolling_pc">
+				<div class="visualRoll">
+					<!-- 이미지 슬라이드 -->
+					<ul class="viewImgList">
+						<li class="imglist0">
+							<div class="roll_content">
+								<a href="javascript:;">
+									<img src="img/slide/imgslide01.png" alt="어떤 여행을 꿈꾸시나요?">
+									<p class="roll_txtline">trip the beat</p>
+								</a>
+							</div>
+						</li>
+						<li class="imglist1">
+							<div class="roll_content">
+								<a href="javascript:;">
+									<img src="img/slide/imgslide02.png" alt="당신의 꿈이 이루어집니다.">
+									<p class="roll_txtline">trip the beat</p>
+								</a>
+							</div>
+						</li>
+						<li class="imglist2">
+							<div class="roll_content">
+								<a href="javascript:;">
+									<img src="img/slide/imgslide03.png" alt="ssong trip과 함께 떠나보세요">
+									<p class="roll_txtline">trip the beat</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+
+					<!-- 롤버튼 -->
+					<div class="rollbtnArea">
+						<ul class="rollingbtn">
+							<li class="seq butt0"><a href="#butt"><img src="img/btn/btn_rollbutt_on.png" alt="이미지순서 1번"></a></li>
+							<li class="seq butt1"><a href="#butt"><img src="img/btn/btn_rollbutt_off.png" alt="이미지순서 2번"></a></li>
+							<li class="seq butt2"><a href="#butt"><img src="img/btn/btn_rollbutt_off.png" alt="이미지순서 3번"></a></li>
+							<li class="rollstop"><a href="#" class="stop"><img src="img/btn/btn_roll_stop.png" alt="일시정지"></a></li>
+							<li class="rollplay"><a href="#" class="play"><img src="img/btn/btn_roll_play.png" alt="재생"></a></li>
+						</ul>
+					</div>
+				</div> <!-- <div class="visualRoll"> -->
+			</div> <!-- <div class="main_rolling_pc"> -->
+
+			<!-- 반응형 모바일버전 -->
+			<div class="main_rolling_mobile">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="javascript:;"><img src="img/mainslide_mob01.jpg" alt="어떤 여행을 꿈꾸시나요?"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;"><img src="img/mainslide_mob02.jpg" alt="어떤 여행을 꿈꾸시나요?"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;"><img src="img/mainslide_mob03.jpg" alt="어떤 여행을 꿈꾸시나요?"></a>
+						</div>
+					</div>
+					<div class="swiper-pagination">
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- 다시 찾는 인기여행지 -->
+			<div class="about_area">
+				<h2>다시 찾는 인기 여행지 <b>TOP 3</b></h2>
+				<div class="about_box">
+					<ul class="place_list box_inner clear">
+						<li>
+							<a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.contact_pop').show();">
+							<!-- <a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.contact_pop').show();"> -->
+								<img class="img_topplace" src="img/topplace/img_topplace01.jpg" alt="탑 여행지 1번">
+								<h3>북한산 둘레길</h3>
+								<p class="txt">북한산 자락을 완만하게 걸을 수 있도록 조성한 저지대 수평 산책로!! 21코스 전구간 탐방 안내 북한산의 4계절을 만나보세요.</p>
+								<span class="view">VIEW</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.space_pop').show();">
+								<img class="img_topplace" src="img/topplace/img_topplace02.jpg" alt="탑 여행지 2번">
+								<h3>남산 둘레길</h3>
+								<p class="txt">도심 속 자연을 만끽해보세요. 완만한 둘레길로 산책하듯 올라가 남산서울타워와 서울의 야경을 느껴보세요.</p>
+								<span class="view">VIEW</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.program_pop').show();">
+								<img class="img_topplace" src="img/topplace/img_topplace03.jpg" alt="탑 여행지 3번">
+								<h3>을지로 힙지로</h3>
+								<p class="txt">무심고 지나쳐 버리기 쉬운 골목길이나 오래된 건물들 사이에서 보물찾기 하듯 을지로만의 느낌이 있는 맛집을 탐방해보세요.</p>
+								<span class="view">VIEW</span>
+							</a>
+						</li>
+					</ul>
+				</div> <!-- <div class="about_box"> -->
+			</div> <!-- <div class="about_area"> -->
+
+			<!-- apps $ notice -->
+			<div class="appbbs_area">
+				<div class="appbbs_box box_inner clear">
+					<h2 class="hdd">상담 & 최근게시물</h2>
+					<p class="app_line">
+						<a href="javascript:;">카카오톡 상담</a>
+						<a href="javascript:;">전화 상담</a>
+					</p>
+					<div class="bbs_line">
+						<h3>NOTICE</h3>
+						<ul class="notice_recent">
+							<li><a href="javascript:;"> 235개 객실에는 미니바 및 평면 TV도 갖추어져 있어 편하게 머무실 수 있습니다.</a></li>
+							<li><a href="javascript:;">무료 유선 및 무선 인터넷이 지원되며 위성 프로그램도 시청하실 수 있습니다.</a></li>
+							<li><a href="javascript:;">편의 시설/서비스로는 전화 외에 금고 및 책상도 있습니다.</a></li>
+							<li><a href="javascript:;">아침 식사(뷔페)를 매일 06:30 ~ 10:00에 유료로 이용하실 수 있습니다.</a></li>
+							<li><a href="javascript:;">거리는 0.1km 단위로 최대한 가깝게 표시됩니다.</a></li>
+						</ul>
+					</div> <!-- <div class="bbs_line"> -->
+				</div> <!-- <div class="appbbs_box box_inner clear"> -->
+			</div> <!-- <div class="appbbs_area"> -->
+		</div> <!-- <div id="container"> -->
+
+		<!-- 푸터 -->
+		<footer>
+			<div class="foot_area box_inner">
+				<ul class="foot_list clear">
+					<li><a href="javascript:;">이용약관</a></li>
+					<li><a href="javascript:;">개인정보취급방침</a></li>
+				</ul>
+				<h2>쏭트립</h2>
+				<p class="addr">서울시 종로구 혜화동 22-22번지 쏭빌딩 202호 <span class="gubun">/</span> 대표번호 : <span class="space0">00-000-0000</span> <span class="gubun">/</span> 이메일 : <span class="space0">ssongtrip@naver.com</span></p>
+				<p class="copy box_inner">Copyright &copy; Kakao Corp. All rights reserved.</p>
+
+				<ul class="snslink clear">
+					<li><a href="javascript:;">blog</a></li>
+					<li><a href="javascript:;">facebook</a></li>
+					<li><a href="javascript:;">instagram</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div> <!-- <div id="wrap"> -->
+
+
+	<!-- 이미지 슬라이드 제이쿼리 플러그인 -->
+	<script src="js/swiper.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var swiper = new Swiper('.swiper-container',{
+				loop:true,
+				autoplay:5500,
+				autoplayDisableOnInteraction:false,
+				pagination:'.swiper-pagination',
+				paginationClickable:true
+			});
+		});
+	</script>
+
+	<!-- 퀵메뉴 -->
+	<h2 class="hdd">퀵메뉴: 전화문의, 카카오톡, 오시는길, 맨위로 가기</h2>
+	<div class="quick_area">
+		<ul class="quick_list">
+			<li>
+				<a href="00-000-0000">
+					<h3>전화문의</h3>
+					<p>00-000-000</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<h3>카카오톡<em> 상담</em></h3>
+					<p>1:1 상담</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<h3 class="to_contact">오시는길</h3>
+				</a>
+			</li>
+		</ul>
+		<!-- ******************** -->
+		<p class="to_top"><a href="#layout0" class="s_point">TOP</a></p>
+	</div> <!-- <div class="quick_area"> -->
+	<!-- ********* 보이진 않지만 들리게 하기 위해 만듬************ -->
+
+
+	<!-- 모달창 -->
+	<!-- 북한산 둘레길 -->
+	<div class="popup_base contact_pop">
+		<!-- *************인라인으로 바로 메서드 정의해버림************** -->
+		<div class="pop_content">
+			<p class="btn_xpop"><a href="#" onclick="$(this).parent().parent().parent().hide()">닫기</a></p>
+			<ul class="pop_list">
+				<li>
+					<h2 class="tit_pop">북한산 둘레길</h2>
+					<img class="pop_img" src="img/img_pop1_1.jpg" alt="북한산 둘레길">
+					<div class="pop_txt">
+						<p>북한산과 도봉산 자락의 샛길을 연결하여 조성한 산책로.<br> 산책로의 형태에 따라 21개 주제로 구성하여 총 21개 구간으로 이루어져 있다.</p>
+					</div>
+				</li>
+			</ul>
+		</div><!-- <div class="pop_content"> -->
+	</div><!-- <div class="popup_base contact_pop"> -->
+	
+	<!-- 남산 둘레길 -->
+	<div class="popup_base space_pop">
+		<!-- *************************** -->
+		<div class="pop_content">
+			<p class="btn_xpop"><a href="#" onclick="$(this).parent().parent().parent().hide()">닫기</a></p>
+			<ul class="pop_list">
+				<li>
+					<h2 class="tit_pop">남산 둘레길</h2>
+					<img class="pop_img" src="img/img_pop2_1.jpg" alt="남산 둘레길1">
+					<div class="pop_txt">
+						<p>남산은 서울의 중심이다. N서울타워 광장에는 서울 중심점이 있다. 이곳이 중심이라는 얘기다.<br> 남산이 서울의 중심이란 사실은 남산을 올라보면 안다.</p>
+					</div>
+				</li>
+				<li>
+					<h2 class="tit_pop">남산 둘레길</h2>
+					<img class="pop_img" src="img/img_pop2_2.jpg" alt="남산 둘레길2">
+					<div class="pop_txt">
+						<p>북쪽으로는 북한산, 남쪽으로는 관악산이 크게 아우른 가운데 서울이 동심원을 그리며 자리한다.<br>그 도심을 한강이 유유히 흘러와 남산을 감싸고 돌아간다.</p>
+					</div>
+				</li>
+			</ul>
+		</div><!-- <div class="pop_content"> -->
+	</div><!-- <div class="popup_base contact_pop"> -->
+	
+	<!-- 을지로 힙지로 -->
+	<div class="popup_base program_pop">
+		<!-- *************************** -->
+		<div class="pop_content">
+			<p class="btn_xpop"><a href="#" onclick="$(this).parent().parent().parent().hide()">닫기</a></p>
+			<ul class="pop_list">
+				<li>
+					<h2 class="tit_pop">을지로 힙지로</h2>
+					<img class="pop_img" src="img/img_pop3_1.jpg" alt="을지로 힙지로">
+					<div class="pop_txt">
+						<p>자고로 인간이란 예상치 못한 상황에 부딫혔을 때 역으로 쾌감을 느끼는 법.<br> 다 쓰러져가는 건물 사이 비좁은 골몬 틈에서 '갑툭튀'한 모던 갤러리, 카페, 레스토랑 매력에 홀딱 빠진 '요즘 것들'이 삼삼오오 을지로에 모여들기 시작했다.</p>
+					</div>
+				</li>
+			</ul>
+		</div><!-- <div class="pop_content"> -->
+	</div><!-- <div class="popup_base contact_pop"> -->
+
+
+</body>
+</html>

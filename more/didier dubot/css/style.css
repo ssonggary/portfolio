@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Playfair+Display:wght@500&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Noto Serif KR', serif;*/
+
+/*초기화*/
+*{margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;
+color: #333;}
+
+.logo {
+	position: fixed; left: 20px; top: 10px;
+	z-index: 10;
+}
+.menu {
+	position: fixed; left: 10px; top: 200px;
+	z-index: 10;
+	width: 300px; 
+	height: 300px;
+	background: rgba(250,250,250,0.3);
+	padding: 10px;
+}
+.menu li a {
+	display: block;
+	font-size: 20px;
+	text-align: right;
+	line-height: 3;
+	transition: all 0.5s;
+	border-top: 1px solid #333;
+}
+.menu li:hover a {
+	font-size: 30px; font-weight: bold;
+}
+.menu li:nth-child(1):hover a {
+	color: #b6b6b4;
+	border-top: 1px solid #b6b6b4;
+}
+.menu li.on a {
+	color: #b6b6b4;
+	border-top: 1px solid #b6b6b4;
+	font-size: 30px; font-weight: bold;
+}
+.menu li:nth-child(2):hover a {
+	color: #6eb4ce;
+	border-top: 1px solid #6eb4ce;
+}
+.menu li:nth-child(2).on a {
+	color: #6eb4ce;
+	border-top: 1px solid #6eb4ce;
+	/*font-size: 30px; font-weight: bold;*/
+}
+.menu li:nth-child(3):hover a {
+	color: #a62c32;
+	border-top: 1px solid #a62c32;
+}
+.menu li:nth-child(3).on a {
+	color: #a62c32;
+	border-top: 1px solid #a62c32;
+	/*font-size: 30px; font-weight: bold;*/
+}
+.menu li:nth-child(4):hover a {
+	color: #d37b1e;
+	border-top: 1px solid #d37b1e;
+}
+.menu li:nth-child(4).on a {
+	color: #d37b1e;
+	border-top: 1px solid #d37b1e;
+	/*font-size: 30px; font-weight: bold;*/
+}
+#sns {
+	position: fixed; right: 10px; top: 10px;
+	z-index: 10;
+}
+#sns i {
+	font-size: 20px;
+	margin-bottom: 10px;
+	transition: all 0.3s;
+}
+#sns i:hover {
+	font-size: 25px;
+	color: #ccc;
+}
+.wrap {
+	position: relative;
+}
+section {
+	/*position: fixed;*/
+	/*position: absolute;*/
+	position: relative;
+	/*left: 0; top: 0;*/
+	width: 100%; 
+	/*height: 100%;*/
+	height: 1000px;
+	background-image: url(../img/img1.jpg);
+	background-repeat: no-repeat;
+	/*background: url(../img/img1_1.jpg) no-repeat;*/
+	background-size: cover;
+	/*****************백그라운드의 속성을 여러가지 쓸때는 나누어서 써준다.***************/
+	/***********백그라운드의 스크롤링의 위치를 제어해준다.*************/
+	background-attachment: fixed;
+	overflow: hidden;
+	/****브러쉬 이미지가 넘치는 것을 제어해줌****/
+}
+section:nth-child(1){background-image: url(../img/img1_1.jpg);}
+section:nth-child(2){background-image: url(../img/img2_2.jpg);}
+section:nth-child(3){background-image: url(../img/img3_3.jpg);}
+section:nth-child(4){background-image: url(../img/img4_4.jpg);}
+section article {
+	position: absolute; top: 50%; left: 500px;
+}
+article p {
+	font-size: 100px; font-weight: bold;
+	color: #55524f;
+	font-family: 'Playfair Display', serif;
+}
+section:nth-child(3) article p,
+section:nth-child(4) article p { color: #2c2825;}
+
+article span {
+	font-size: 18px;
+	color: #999;
+	font-family: 'Noto Serif KR', serif;
+	margin-left: 10px;
+}
+article span em {font-family: 'Playfair Display', serif;}
+
+section:nth-child(1) article span,
+section:nth-child(2) article span {color: #5f4f3f;}
+section:nth-child(3) article span,
+section:nth-child(4) article span {color: #c6bfb7;}
+
+
+section img {
+	position: absolute;
+	/*overflow: hidden;*/
+	}
+.p11 {right: -100px; bottom: 0;}
+.p12 {right: 100px; bottom: 300px;}
+/*.p13 {right: 550px; bottom: 550px;}*/
+
+.p21 {right: -200px; bottom: 0;}
+.p22 {right: 150px; bottom: 300px;}
+
+.p31 {right: 0; bottom: 0;}
+.p32 {right: 300px; bottom: 300px;}
+.p33 {right: 50px; bottom: 50px;}
+
+.p41 {right: -10px; bottom: -10px;}
+.p42 {right: 200px; bottom: 300px;}

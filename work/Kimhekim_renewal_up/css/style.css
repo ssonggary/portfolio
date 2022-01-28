@@ -1,0 +1,769 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*font-family: 'Karla', sans-serif;*/
+
+/*초기화*/
+*{margin: 0; padding: 0;}
+input,select,textarea,fieldset {border: 0;}
+body {font-family: 'Karla', sans-serif; font-size: 15px;}
+ul {list-style: none;}
+a {text-decoration: none; color: #000;}
+.clear {clear: both; display: block; content: "";}
+
+html,body {height: 100%; 
+	/* overflow: hidden; */
+}
+
+#wrap {
+	position: relative;
+	width: 100%; height: 100%;
+}
+
+
+/********************************************************************헤더*/
+header {
+	position: fixed; left: 0; top: 0;
+	z-index: 10;
+	width: 100%; height: 120px;
+	padding-top: 35px;
+	box-sizing: border-box;
+	background-color: #fff;
+	text-align: center;
+	transition: all 0.4s;
+}
+header.roll {height: 50px; padding-top: 0;}
+header.roll .logo {margin-top: 10px;}
+header.roll .logo img {width: 150px;}
+
+.gnb {
+	float: left;
+	width: 35%; 
+	/* height: 150px; */
+	margin-top: 15px;
+}
+.gnb>li {
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+.gnb>li>a {
+	transition: all 1s;
+}
+.gnb>li>a:hover {
+	border-top: 1px solid #000;
+}
+.col_list {
+	display: none;
+	position: absolute; left: 0; top: 25px;
+	width: 230px;
+	background-color: #fff;
+	text-align:left;
+	padding-left: 10px;
+	border-left: 1px solid #000;
+}
+.col_list li>a {
+	display: block;
+	line-height: 2;
+}
+.col_list li>a:hover {
+	color: #ccc;
+}
+.logo {
+	float: left;
+	width: 30%; 
+	/* height: 150px; */
+	transition: all 0.4s;
+}
+.logo img {
+	width: 250px;
+	transition: all 0.4s;
+}
+.pay {
+	float: right;
+	width: 35%; 
+	/* height: 150px; */
+	margin-top: 15px;
+}
+.pay>li {
+	float: right;
+	margin-right: 30px;
+	position: relative;
+}
+.pay>li>a:hover {
+	border-top: 1px solid #000;
+}
+.cur_list {
+	display: none;
+	position: absolute; left: 0; top: 25px;
+	width: 150px;
+	background-color: #fff;
+	text-align:left;
+	padding-left: 10px;
+	border-left: 1px solid #000;
+}
+.cur_list li>a {
+	display: block;
+	line-height: 2;
+}
+.cur_list li>a:hover {
+	color: #ccc;
+}
+.responsive-nav {display: none;}
+
+/****************************************************************컨텐츠*****/
+#fullpage {
+	position: relative; left: 0; top: 120px;
+	width: 100%; height: 100%;
+	}
+
+/****************************************************************섹션*****/
+section.ereser {
+	position: relative; left: 0; top: 0;
+	width: 100%; height: 100%;
+	overflow: hidden;
+	/*cursor: pointer;*/
+}
+.box {
+	position: absolute;
+	display: block;
+	width: 100%; height: 100%;
+	background: url("../img/eraser2.jpg");
+	background-size: cover;
+	overflow: hidden;
+	/*opacity: 0.9;*/
+}
+.smudge {
+	position: absolute; top: 35%;left: 0;
+	width: 100%; 
+	text-align: center;
+	font-size: 40px; font-weight: 800;
+	color: #333;
+	opacity: 0.8;
+	transition: all 0.3s;
+}
+canvas {
+	/*position: absolute; left: 0; top: 0; z-index: 10;*/
+	position: absolute;
+	background: transparent;
+	width: 100%; height: 100%;
+	overflow: hidden;
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+/*************************************************************컬랙션********/
+section.collection {
+	position: relative; left: 0; top: 0;
+	background-color: #fff;
+	width: 100%; height: 100%;
+}
+section.collection article {
+	width: 100%; height: 100%;
+}
+.collection div {
+	position: relative;
+	overflow: hidden;
+}
+.collection div:nth-child(1){float: left; width: 75%; height: 50%;}
+.collection div:nth-child(1) p {
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	background: url(../img/img1.jpg)no-repeat center; 
+	background-size: cover;
+	overflow: hidden;
+}
+.collection div:nth-child(2){float: left; width: 25%; height: 25%;}
+.collection div:nth-child(2) p {
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	background: url(../img/img2.jpg)no-repeat center; 
+	background-size: cover;
+	overflow: hidden;
+}
+.collection div:nth-child(3){float: left; width: 25%; height: 25%;}
+.collection div:nth-child(3) p {
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	background: url(../img/img3.jpg)no-repeat center; 
+	background-size: cover;
+	overflow: hidden;
+}
+
+
+.collection div:nth-child(4){float: right; width: 75%; height: 50%;}
+.collection div:nth-child(4) p {
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	background: url(../img/img4.jpg)no-repeat center; 
+	background-size: cover;
+	overflow: hidden;
+}
+.collection div:nth-child(5){float: right; width: 25%; height: 25%;}
+.collection div:nth-child(5) p {
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	background: url(../img/img5.jpg)no-repeat center; 
+	background-size: cover;
+	overflow: hidden;
+}
+.collection div:nth-child(6){float: right; width: 25%; height: 25%;}
+.collection div:nth-child(6) p {
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	background: url(../img/img6.jpg)no-repeat center; 
+	background-size: cover;
+	overflow: hidden;
+}
+.collection div a span {
+	display: block;
+	position: absolute; left: 10px; top: 10px;
+	font-size: 16px;
+	opacity: 0;
+	/*transition: all 0.5s;*/
+}
+.collection div a span:hover {
+	font-weight: bold;
+}
+/*#fullpage:after {clear: both; display: block; content: "";}*/
+
+
+
+/******************************************************************푸터***/
+
+footer {position: fixed; left: 0; bottom: 100px;}
+footer .foot_info {
+	font-size: 18px;
+	transform: rotate(-90deg);
+}
+footer .foot_info a {
+	transition: all 0.4s;
+}
+footer .foot_info a span {
+	display: inline-block;
+	width: 60px; height: 1px;
+	background: #000;
+}
+footer .foot_info a:hover {font-weight: bold;}
+
+/********************************************************푸터 모달 팝업*/
+.modal {
+	display: none;
+	position: fixed; left: 0; top: 0; z-index: 10;
+	width: 100%; height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+.footer-mo {
+	position: absolute; left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%; height: 95%;
+	background: #fff;
+	padding:20px; 
+	box-sizing: border-box;
+	opacity: 0;
+}
+.modal .footer-mo .company {
+	float: left;
+	width: 15%; height: 90%;
+	border-right: 1px solid #ccc;
+	/*background: pink;*/
+	text-align: right;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+.modal .footer-mo .company li {
+	display: block;
+	padding: 20px 0;
+}
+.modal .footer-mo .company li>a:hover {border-bottom: 1px solid #000;}
+.modal .footer-mo .company li.on>a {border-bottom: 1px solid #000;}
+.modal .footcon_wrap {
+	float: right;
+	position: relative;
+	width: 84%; height: 95%;
+	/*background: pink;*/
+	text-align: center;
+	margin: 0 auto;
+}
+.modal .footcon_wrap section {
+	position: relative;
+	width: 100%; height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+}
+.modal .footcon_wrap section.on {
+	display: block;
+}
+.modal .footcon_wrap .about img{
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+}
+.modal .footcon_wrap h3 {
+	display: inline-block;
+	border-top: 1px solid #000;
+	margin: 20px 0 10px;
+}
+.modal .footcon_wrap .about p,
+.modal .footcon_wrap .customer_care p,
+.modal .footcon_wrap .track_your_order p {
+	width: 90%;
+	font-size: 14px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+.modal .footcon_wrap form {
+	padding-top: 30px;
+	/*background: pink;*/
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.modal .footcon_wrap fieldset{padding-top: 15px;}
+.modal .footcon_wrap legend {
+	font-size: 17px; font-weight: bold;
+	border-top: 1px solid #000;
+	margin: 30px 0 10px;
+}
+.modal .footcon_wrap label {
+	display: block;
+	margin: 10px 0 5px;
+	text-align: left;
+}
+.modal .footcon_wrap input,
+.modal .footcon_wrap select {
+	display: block;
+	width: 780px; height: 30px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-sizing: border-box;
+	color: #aaa;
+}
+.modal .footcon_wrap input#send,
+.modal .footcon_wrap input#news_send,
+.modal .footcon_wrap input#order_send {
+	color: #000; margin-top: 20px;
+}
+.modal .footcon_wrap .contact input::placeholder {color: #aaa;}
+.modal .footcon_wrap .contact select option {
+	font-size: 13px;
+	color: #aaa;
+}
+.modal .footcon_wrap .contact textarea {
+	display: block;
+	width: 780px; height: 100px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-sizing: border-box;
+	color: #aaa;
+	font-family: Arial; 
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+
+.modal .footcon_wrap .newsletter form,
+.modal .footcon_wrap .track_your_order form {margin-top: 100px;}
+.modal .footcon_wrap .customer_care table {
+	margin: 50px auto 80px auto;
+	/*border: 1px solid #ccc;*/
+}
+.modal .footcon_wrap .customer_care table {
+	width: 80%; height: 30%;
+	border-collapse: collapse;
+	border: 2px solid #ccc;
+}
+.modal .footcon_wrap .customer_care table th, td {
+	margin: 0;
+	border: 1px solid #ccc;
+}
+.modal .footcon_wrap .shipping_returns,
+.modal .footcon_wrap .legal,
+.modal .footcon_wrap .privacy {
+	top: 50px;
+	height: 90%;
+	overflow: auto;
+}
+
+.modal .footcon_wrap .shipping_returns p,
+.modal .footcon_wrap .legal p,
+.modal .footcon_wrap .privacy p {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.modal .footcon_wrap .shipping_returns span {
+	text-decoration: underline;
+}
+
+
+.modal .footer-mo .copy {
+	position: absolute; left: 0; bottom: 10px;
+	width: 100%;
+	text-align: center;
+	/*background: pink;*/
+}
+.modal .footer-mo .copy p {
+	font-size: 10px;
+}
+.modal .footcon_wrap .legal p span,
+.modal .footcon_wrap .privacy p span{
+	font-size: 13px;
+}
+
+/*닫기버튼*/
+.modal .footer-mo .close_btn {
+	display: block;
+	position: absolute; top: 10px; right: 10px;
+	opacity: 0.5;
+	transition: all 0.6s;
+}
+.modal .footer-mo .close_btn:hover {opacity: 1;}
+.modal .footer-mo .close_btn img{width: 40px;}
+
+/* 뒤로가기 버튼 */
+.modal .footer-mo .back_btn {
+	display: none;
+	position: absolute; top: 8px; right: 52px;
+	opacity: 0.5;
+	transition: all 0.6s;
+}
+.modal .footer-mo .back_btn:hover {opacity: 1;}
+.modal .footer-mo .back_btn img{width: 40px;}
+
+
+
+/* 반응형 */
+
+@media all and (min-width:768px) and (max-width:1100px) {
+	/* 헤더영역 */
+	header {height: 75px; padding-top: 0;}
+	header .logo {
+		float: none;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	header .logo img {width: 150px;}
+	.gnb {display: none;}
+	.pay {display: none;}
+	.responsive-nav {display: block;}
+	.hamburger-box {
+		position: absolute; top: 30px; left: 25px;
+		display: block;
+		width: 25px;
+		cursor: pointer;
+		transition: all 0.4s;
+		}
+	.hamburger-box span {
+		display: block;
+		width: 100%; height: 2px; 
+		background-color: #333;
+		/* margin: 0 auto;
+		margin-bottom: 8px; */
+	}
+	.hamburger-box span:nth-child(2){margin: 7px 0;}
+	header.roll .hamburger-box {top: 17px;}
+	.small-nav {
+		display: none;
+
+		position: absolute; top: 100%; left: 0; 
+		width: 100%;
+		background: #fff;
+		margin-top: 0;
+		padding-left: 0;
+	}
+	.small-nav li {border-bottom: 1px solid #ccc;}
+	.small-nav li a {
+		display: block;
+		padding: 14px 0 14px 0;
+		font-size: 14px; color: #333;
+	}
+	.small-nav li a:hover {color: #ccc;}
+
+
+
+	/* 컨텐츠영역-이레이져 캔버스 */
+	#fullpage {
+		top: 75px;
+	}
+	
+	/* 컨텐츠영역-컬랙션 */
+	.collection div a span {font-size: 14px;}
+
+
+	/* 푸터 */
+	.modal .footer-mo .company {height: 94%;}
+	.modal .footer-mo .company li a {font-size: 13px;}
+	.modal .footcon_wrap section {
+		top: 25px;
+		height: 97%;
+		overflow-y: auto;
+	}
+	.modal .footcon_wrap h3 {font-size: 16px;}
+	.modal .footcon_wrap .about p, .modal .footcon_wrap .customer_care p, .modal .footcon_wrap .track_your_order p {font-size: 13px;}
+	
+	.modal .footer-mo .close_btn img {width: 25px;}
+	.modal .footer-mo .copy {bottom: 3px;}
+	.modal .footcon_wrap form {width: 100%;}
+	.modal .footcon_wrap legend {font-size: 16px;}
+	.modal .footcon_wrap label {font-size: 13px;}
+	.modal .footcon_wrap input, .modal .footcon_wrap select {
+		width: 99%;
+		font-size: 13px;
+	}
+	.modal .footcon_wrap .contact textarea {
+		width: 99%;
+		margin-bottom: 20px;
+	}
+	.modal .footcon_wrap .shipping_returns p,
+	.modal .footcon_wrap .legal p,
+	.modal .footcon_wrap .privacy p {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+	/* 헤더영역 */
+	header {height: 75px; padding-top: 0;}
+	header .logo {
+		float: none;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	header .logo img {width: 150px;}
+	.gnb {display: none;}
+	.pay {display: none;}
+	.responsive-nav {display: block;}
+	.hamburger-box {
+		position: absolute; top: 30px; left: 25px;
+		display: block;
+		width: 25px;
+		cursor: pointer;
+		transition: all 0.4s;
+		}
+	.hamburger-box span {
+		display: block;
+		width: 100%; height: 2px; 
+		background-color: #333;
+		/* margin: 0 auto;
+		margin-bottom: 8px; */
+	}
+	.hamburger-box span:nth-child(2){margin: 7px 0;}
+	header.roll .hamburger-box {top: 17px;}
+	.small-nav {
+		display: none;
+
+		position: absolute; top: 100%; left: 0; 
+		width: 100%;
+		background: #fff;
+		margin-top: 0;
+		padding-left: 0;
+	}
+	.small-nav li {border-bottom: 1px solid #ccc;}
+	.small-nav li a {
+		display: block;
+		padding: 14px 0 14px 0;
+		font-size: 14px; color: #333;
+	}
+	.small-nav li a:hover {color: #ccc;}
+
+
+
+	/* 컨텐츠영역-이레이져 캔버스 */
+	#fullpage {
+		top: 75px;
+	}
+	
+	/* 컨텐츠영역-컬랙션 */
+	.collection div a span {font-size: 14px;}
+
+
+	/* 푸터 */
+	.modal .footer-mo {overflow: hidden;}
+	.modal .footer-mo .company {
+		position: absolute; top: 20px;	left: 7px;
+		width: 100%; height: 94%;
+		border-right: none;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.modal .footer-mo .company li a {font-size: 13px;}
+	.modal .footcon_wrap {
+		top: 25px; left: 106%;
+		width: 100%; height: 94%;
+	}
+	.modal .footcon_wrap section {
+		height: 94%;
+		overflow-y: auto;
+	}
+	.modal .footcon_wrap .shipping_returns, .modal .footcon_wrap .legal, .modal .footcon_wrap .privacy {
+		top: 0;
+		height: 94%;
+		overflow: auto;
+	}
+	.modal .footcon_wrap h3 {font-size: 16px;}
+	.modal .footcon_wrap .about p, .modal .footcon_wrap .customer_care p, .modal .footcon_wrap .track_your_order p {font-size: 13px;}
+	
+	.modal .footer-mo .close_btn img {width: 25px;}
+	
+	/* 뒤로가기버튼 */
+	.modal .footer-mo .back_btn {
+		display: block;
+		
+	}
+	.modal .footer-mo .back_btn img {width: 30px;}
+
+	.modal .footer-mo .copy {width: 96%; left: 8px; bottom: 6px; }
+	.modal .footcon_wrap form {width: 100%;}
+	.modal .footcon_wrap legend {font-size: 16px;}
+	.modal .footcon_wrap label {font-size: 13px;}
+	.modal .footcon_wrap input, .modal .footcon_wrap select {
+		width: 99%;
+		font-size: 13px;
+	}
+	.modal .footcon_wrap .contact textarea {
+		width: 99%;
+		margin-bottom: 20px;
+	}
+	.modal .footcon_wrap .shipping_returns p,
+	.modal .footcon_wrap .legal p,
+	.modal .footcon_wrap .privacy p {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	
+}
+
+@media all and (max-width:479px) {
+	/* 헤더영역 */
+	header {height: 75px; padding-top: 0;}
+	header .logo {
+		float: none;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	header .logo img {width: 150px;}
+	.gnb {display: none;}
+	.pay {display: none;}
+	.responsive-nav {display: block;}
+	.hamburger-box {
+		position: absolute; top: 30px; left: 25px;
+		display: block;
+		width: 25px;
+		cursor: pointer;
+		transition: all 0.4s;
+		}
+	.hamburger-box span {
+		display: block;
+		width: 100%; height: 2px; 
+		background-color: #333;
+		/* margin: 0 auto;
+		margin-bottom: 8px; */
+	}
+	.hamburger-box span:nth-child(2){margin: 7px 0;}
+	header.roll .hamburger-box {top: 17px;}
+	.small-nav {
+		display: none;
+
+		position: absolute; top: 100%; left: 0; 
+		width: 100%;
+		background: #fff;
+		margin-top: 0;
+		padding-left: 0;
+	}
+	.small-nav li {border-bottom: 1px solid #ccc;}
+	.small-nav li a {
+		display: block;
+		padding: 14px 0 14px 0;
+		font-size: 14px; color: #333;
+	}
+	.small-nav li a:hover {color: #ccc;}
+
+
+
+	/* 컨텐츠영역-이레이져 캔버스 */
+	#fullpage {
+		top: 75px;
+	}
+	
+	/* 컨텐츠영역-컬랙션 */
+	.collection div a span {font-size: 14px;}
+
+
+	/* 푸터 */
+	.modal .footer-mo {overflow: hidden;}
+	.modal .footer-mo .company {
+		position: absolute; top: 20px;	left: 7px;
+		width: 100%; height: 94%;
+		border-right: none;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.modal .footer-mo .company li a {font-size: 13px;}
+	.modal .footcon_wrap {
+		top: 25px; left: 400px;
+		width: 100%; height: 94%;
+	}
+	.modal .footcon_wrap section {
+		height: 94%;
+		overflow-y: auto;
+	}
+	.modal .footcon_wrap .shipping_returns, .modal .footcon_wrap .legal, .modal .footcon_wrap .privacy {
+		top: 0;
+		height: 94%;
+		overflow: auto;
+	}
+	.modal .footcon_wrap h3 {font-size: 16px;}
+	.modal .footcon_wrap .about p, .modal .footcon_wrap .customer_care p, .modal .footcon_wrap .track_your_order p {font-size: 13px;}
+	
+	.modal .footer-mo .close_btn img {width: 25px;}
+	
+	/* 뒤로가기버튼 */
+	.modal .footer-mo .back_btn {
+		display: block;
+		
+	}
+	.modal .footer-mo .back_btn img {width: 30px;}
+
+	.modal .footer-mo .copy {width: 96%; left: 8px; bottom: 6px; }
+	.modal .footcon_wrap form {width: 100%;}
+	.modal .footcon_wrap legend {font-size: 16px;}
+	.modal .footcon_wrap label {font-size: 13px;}
+	.modal .footcon_wrap input, .modal .footcon_wrap select {
+		width: 99%;
+		font-size: 13px;
+	}
+	.modal .footcon_wrap .contact textarea {
+		width: 99%;
+		margin-bottom: 20px;
+	}
+	.modal .footcon_wrap .shipping_returns p,
+	.modal .footcon_wrap .legal p,
+	.modal .footcon_wrap .privacy p {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}

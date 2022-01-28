@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Play&display=swap');
+/*font-family: 'Play', sans-serif;*/
+/*font-family: 'Monoton', cursive;*/
+
+
+/*초기화*/
+*{margin: 0; padding: 0; list-style: none;}
+a{outline: 0; text-decoration:none; color: #bbb;}
+img{border:0;}
+
+
+figure {
+	position: fixed;
+	width: 100%; height: 100%;
+	/*top: -300px;*/
+	opacity: 0.9;
+}
+figure>img {
+	width: 100%; 
+	/*height: 100%;*/
+}
+
+
+h1 {
+	position: fixed; top: 40px; left: 40px;
+	z-index: 10;
+}
+h1>img {
+	width: 280px;
+}
+header {
+	position: fixed; top: 0; left: -420px;
+	width: 700px; height: 100%;
+	background-color: yellow;
+
+/**************************백그라운드 그라디언트***********************/
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/***************************기울기 조정******************************/
+transform: skewX(-40deg);
+}
+
+#gnb {
+	position: absolute; right: 0; top: 150px;
+	width: 220px;
+}
+#gnb>li {
+	position: relative;
+	/********각각의 아버지를 만들어줘서 그 위치에서 하위레벨이 나오도록 한다********/
+}
+#gnb>li>a{
+	display: block;
+	width: 220px; height: 50px;
+	padding-right: 40px;
+	box-sizing: border-box;
+	color: #222222;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 3;
+	font-family: 'Play', sans-serif;
+	/*margin-right: 0;*/
+	text-align: right;
+	/**************글씨도 기울어진거 원상태로*************/
+}
+#gnb>li.on>a {
+	background: #111; color: #fff;
+}
+#gnb>li:hover>a {
+	background: #111; color: #fff;
+}
+#gnb>li>a>em {
+	display: inline-block;
+	/***********이엠태그는 인라인 블럭이기 때문에 형태를 변화시켜서 트랜스폼 시켜줘야한다***********/
+	transform: skewX(40deg) !important;
+}
+
+/****************************************************서브레벨**********/
+#gnb ul {
+	/*display: none;*/
+	position: absolute; left: 0; top: 0;
+	/*width: 220px;*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+#gnb ul a {
+	display: block;
+	width: 150px; height: 40px;
+	background: #222;
+	border-bottom: 1px solid #FA7A5D;
+	font-weight: bold; font-size: 16px; line-height: 2.5; color: #fff;
+	margin-bottom: 3px; padding-left: 50px;
+	box-sizing: border-box;
+	/*text-align: center; text-indent: 50px;*/
+}
+#gnb ul a:hover {
+	background: #FA7A5D;
+	color: #222;
+	transition: all 0.5;
+}
+#gnb ul li a>em {
+	display: block;
+	transform: skewX(40deg) !important;
+}
+#gnb>li:hover ul {
+	display: block;
+	left: 205px; 
+	opacity: 0.8;
+}
+#gnb li.on ul {
+	display: block;
+	position: absolute; z-index: 10;
+	top: -10px; left: 205px;
+	opacity: 0.8;
+}
+#gnb li.on ul a {
+	background-color: #444; opacity: 0.7;
+	transition: all 0.5s;
+}
+#gnb li.on ul a:hover {
+	color: #222;
+}
+
+/*sns*/
+#sns {
+	position: fixed; right: 0; top: 20px;
+	z-index: 10;
+}
+#sns li {
+	float: left;
+	margin-right: 30px;
+}
+#sns li .fab {
+	font-size: 25px; color: #FA7A5D; opacity: 0.5;
+	transform: scale();
+	transition: all 0.5s;
+}
+#sns li .fab:hover {
+	opacity: 1; 
+	transform: scale(1.4);
+}
+#sns li .fas {
+	font-size: 25px; color: #FA7A5D; opacity: 0.5;
+	transform: scale();
+	transition: all 0.5s;
+}
+#sns li .fas:hover {
+	opacity: 1; 
+	transform: scale(1.4);
+}
+
+/*슬로건*/
+.txtBox {
+	position: fixed; top: 200px; right: 70px; 
+	width: 340px; height: 280px;
+}
+.txt {
+	position: absolute; top: 200px; right: 0;
+	font-family: 'Play', sans-serif;
+	color: #bbb; font-size: 34px;
+	letter-spacing: -2px;
+}
+.txt b {
+	font: bold 34px arial;
+	color: #FA7A5D;
+	margin-left: 20px;
+}
+
+.tit {
+	position: absolute; top: 0; right: 0;
+	font-size: 160px; color: #FA7A5D;
+	font-family: 'Monoton', cursive;
+	letter-spacing: -1px;
+}
+.tit em {
+	font-size: 50px;
+	font-family: 'Play', sans-serif;
+	color: #fff;
+}
+
+/*이벤트 뉴스 상품소식*/
+#side {
+	position: fixed; right: -900px; bottom: 0;
+	width: 800px; height: 100%;
+	background: #111111;
+	opacity: 0.5;
+	/************/
+	transform: skewX(-40deg);
+	transition: all 0.5s;
+	cursor: pointer;
+}
+#side:hover {
+	 right: -400px;
+}
+#side .con {
+	position: absolute; left: 200px; bottom: 0;
+	width: 400px; height: 100%;
+	background: #000;
+	transition: all 1s;
+}
+#side:hover .con {
+	left: 100px;
+}
+#side .con p {
+	position: absolute; 
+	/*left: 150px; */
+	bottom: 0;
+	width: 300px; height: 150px;
+	margin-left: 50px;
+	
+	transform: translateX(200px);
+	transition: all 1.2s;
+}
+#side:hover .con p {
+	/*left: 50px;*/
+	transform: translateX(0px);
+}
+#side .con p:nth-child(1){
+	bottom: 330px;
+	/*transform: translateX(150px);*/
+	transition: all 0.8s;
+}
+#side .con p:nth-child(2){
+	bottom: 180px;
+	/*transform: translateX(180px);*/
+	transition: all 1.2s;
+}
+#side .con p:nth-child(3){
+	bottom: 20px;
+	/*transform: translateX(200px);*/
+	transition: all 1.4s;
+}
+#side .con p em {
+	font: bold 16px/1.7 arial;
+	color: #FA7A5D;
+	/*************/
+	display: block;
+	transform: skewX(40deg);
+}
+#side .con p img {
+	width: 300px; height: 100px;
+	opacity: 0.3;
+	transition: all 0.5s;
+}
+#side .con p img:hover {
+	opacity: 1;
+}
+
+/*버튼*/
+.btnContents {
+	position: absolute;
+	/*position: fixed;*/
+	left: 100px; 
+	/*right: 30px; */
+	bottom: 40px;
+	width: 150px; height: 50px;
+	transform: skewX(40deg);
+}
+#side:hover .btnContents {
+	left: 550px;
+}
+.btnContents i {
+	font-size: 60px; color: #FA7A5D;
+	position: absolute; right: 0; bottom: 0;
+}
+/****************************/
+.btnContents i:nth-child(1) {
+	animation: ani linear 1.5s 0s infinite;
+}
+.btnContents i:nth-child(2) {
+	animation: ani linear 1.5s 0.5s infinite;
+}
+.btnContents i:nth-child(3) {
+	animation: ani linear 1.5s 1s infinite;
+}
+
+@keyframes ani {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+		right: 0;
+		/*transform: translateX();*/
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.5);
+		right: 100px;
+		/*transform: translateX(-100px);*/
+	}
+}

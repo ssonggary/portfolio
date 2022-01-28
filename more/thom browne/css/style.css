@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a { text-decoration: none; color: #222;}
+body {
+	position: fixed;
+	width: 100%; height: 100%;
+	background-color: #595859;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*****************원근감 넣기******************/
+.wrap {
+	position: fixed;
+	width: 100%; height: 100%;
+	perspective: 900px;
+	/***************원근감은 포지션에 영향을 받기 때문에 포지션과 크기값을 넣어줘야한다.****************/
+}
+.btnMenu {
+	position: fixed; left: 55px; top: 50px;
+	z-index: 5; 
+	color: #222;
+	font-size: 40px; text-align: center;
+	animation: ani 0.5s infinite alternate;
+	/************alternate 0에서 100% 100%에서 0으로 갈수 있도록 해준다.**********/
+}
+@keyframes ani {
+	0%{opacity: 1; color: #fff; transform: scale(1);}
+	100%{opacity: 0.5; clear: #888; transform: scale(1.5);}
+}
+nav {
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 2;
+	width: 150px; height: 100%;
+	background-color: #fff;
+
+	/**********************/
+	transform: rotateY(120deg);
+	transform-origin: left center;
+	transition: all 0.5s;
+	opacity: 0;
+}
+nav.on {
+	transform: rotateY(15deg);
+	opacity: 1;
+}
+nav>h1 {
+	position: absolute; left: 50%; top: 110px; margin-left: -50px;
+	width: 100px; 
+}
+nav>h1>img {
+	width: 100%;
+}
+nav>ul {
+	position: absolute; top: 30%; left: 0;
+	width: 100%;
+}
+nav>ul>li>a {
+	display: block;
+	width: 100%;
+	font-size: 18px; color: #333;
+	text-align: center; line-height: 4;
+}
+nav>ul>li>a:hover {
+	color: #fff; background-color: #ccc;
+}
+
+section {
+	position: fixed;
+	width: 100%; height: 100%;
+	background: #252626;
+	transition: all 0.5s;
+	/***********트렌스폼 오리진은 축을 이동시킨다 (오른쪽에 센터)*************/
+	transform-origin: right center;
+}
+section.on {
+	transform: rotateY(-10deg);
+	/*************y축을 중심으로 로테이트를 한다.************/
+}
+
+section>article {
+	position: absolute;
+	width: 100%; height: 100%;
+	/*display: none;*/
+	
+	/**************이미지가 돌아가게*************/
+	opacity: 0;
+	perspective: 700px;
+	transition: all 1.5s;
+}
+section>article.on {
+	/*display: block;*/
+	/*********디스플레이가 들어가면 회전이 안보이기 때문에 빼야한다************/
+	opacity: 1;
+	/*z-index: 10;*/
+}
+section>article>p {
+	position: relative;
+	/************회전 효과를 시각화하기 위해************/
+	overflow: hidden;
+	transform: rotateY(180deg);
+	transition: all 1.5s;
+}
+section>article.on>p {
+	transform: rotateY(0deg);
+}
+section>article>p>span {
+	display: block;
+	position: absolute;
+	width: 100%; top: 50%;
+	margin-top: -10px;
+	font-size: 20px; color: #eee;
+	text-align: center;
+}
+section>article>p>strong {
+	display: block;
+	position: absolute;
+	width: 100%; top: 50%;
+	font-size: 50px; color: #fff;
+	margin-top: -25px; text-align: center;
+}
+section>article>p>em>a>i {
+	position: relative; top: 50%;
+	font-size: 30px !important;
+	color: #ccc;
+	margin: 0px 15px;
+	margin-top: -15px;
+	opacity: 0.5;
+	transition: all 0.5s;
+}
+section>article>p>em>a>i:hover {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+/****************************************************************men**/
+/*.men {display: none;}*/
+.men>p {width: 25%; height: 25%;}
+
+.men>p:nth-child(1){width: 50%; float: left;}
+.men>p:nth-child(2){
+	float: left; 
+	background: url(../img/m1.png);
+	background-size: cover;
+}
+.men>p:nth-child(3){
+	float: left;
+	text-align: center;
+}
+.men>p:nth-child(4){
+	width: 50%; height: 50%; 
+	float: right; 
+	background: url(../img/m6.png)no-repeat;
+	background-size: cover;
+}
+.men>p:nth-child(5){
+	float: right; 
+	background: url(../img/m9.jpg) center top;
+	background-size: cover;
+}
+.men>p:nth-child(6){float: right;}
+.men>p:nth-child(7){
+	float: right; 
+	background: url(../img/m10.jpg);
+	background-size: cover;
+}
+.men>p:nth-child(8){
+	float: right; 
+	background: url(../img/m11.jpg)no-repeat center;
+	background-size: cover;
+}
+.men>p:nth-child(9){float: left;}
+.men>p:nth-child(10){
+	width: 50%; 
+	float: left; 
+	background: url(../img/m4.png);
+	background-size: cover;
+}
+.men>p:nth-child(11){float: left;}
+
+
+
+/****************************************************************women**/
+/*.women {display: none;}*/
+.women>p {width: 25%; height: 25%;}
+
+.women>p:nth-child(1){float: left;}
+.women>p:nth-child(2){
+	float: left; 
+	background: url(../img/w1.png) center;
+	background-size: cover;
+}
+.women>p:nth-child(3){float: left; width: 50%;}
+.women>p:nth-child(4){
+	float: left; 
+	height: 50%;
+	background: url(../img/w10.jpg)no-repeat;
+	background-size: cover;
+}
+.women>p:nth-child(5){
+	float: left;
+	width: 50%; height: 50%;
+	background: url(../img/w6.png) center;
+	background-size: cover;
+}
+.women>p:nth-child(6){
+	float: left;
+	background: url(../img/w8.png) center;
+	background-size: cover;
+}
+.women>p:nth-child(7){
+	float: left; 
+}
+.women>p:nth-child(8){
+	float: left;
+	background: url(../img/w4.png)no-repeat center;
+	background-size: cover;
+}
+.women>p:nth-child(9){float: left;}
+.women>p:nth-child(10){ 
+	float: left; 
+	background: url(../img/w9.png);
+	background-size: cover;
+}
+.women>p:nth-child(11){
+	float: left;
+	background: url(../img/w11.jpg) center;
+	background-size: cover;
+}
+
+
+
+/***************************************************************children**/
+/*.children {display: none;}*/
+.children>p {width: 25%; height: 25%;}
+
+.children>p:nth-child(1){
+	float: left;
+	width: 50%; height: 100%;
+	background: url(../img/k1.png) center;
+	background-size: cover;
+}
+.children>p:nth-child(2){
+	float: left;
+}
+.children>p:nth-child(3){
+	float: left;
+	background: url(../img/k4.png) center;
+	background-size: cover;
+}
+.children>p:nth-child(4){
+	float: left; 
+	width: 50%;
+}
+.children>p:nth-child(5){
+	float: left;
+	width: 25%; height: 50%;
+	background: url(../img/k3.png) center;
+	background-size: cover;
+}
+.children>p:nth-child(6){
+	float: left;
+}
+.children>p:nth-child(7){
+	float: left; 
+	background: url(../img/k5.jpg);
+	background-size: cover;
+}

@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+/*************************************************************reset:초기화*/
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none; color: #bbb; /*outline: 0;*/}
+img {border: 0;}
+body {font-family: 'Roboto';}
+
+/*******************************************************배경이미지********/
+.wrap {
+	position: fixed; left: 0; top:0;
+	width:100%; height:100%;
+	min-width: 1024px;
+	min-height: 768px;
+	background: url('../img/bg.jpg') no-repeat;
+	background-size: cover;
+}
+
+/**********************************************************로고*********/
+.wrap h1 {
+	/*background: pink;*/
+	position:fixed; top: 240px; left: 0;
+	width: 300px; 
+	/*height: 240px;*/
+	text-align: center;
+	margin-left: 16px;
+}
+.wrap h1 strong {
+	/*display: block;*/
+	font: 25px/1.1 Roboto;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	/*margin-bottom: 10px;*/
+}
+.wrap h1 img {width: 200px;}
+.wrap h1 span {
+	/*background: pink;*/
+	font: 16px/1.6 Roboto; 
+	/*font-weight: bold; */
+	color: #fff; 
+	letter-spacing: 5px;
+}
+
+/*********************************************************슬로건************/
+.txt{
+	position: fixed; top: 400px; left: 40px;
+	font: 35px/0.8 Roboto;
+	color: #000;
+	letter-spacing: 0;
+	margin-top: 10px;
+}
+.txt span {color: #fff;}
+
+.sns {
+	position: fixed; top: 30px; right: 50px;
+}
+.sns li {float: left; margin-left: 30px;}
+.sns li a {color: #fff; font-size: 22px;}
+
+/*****************************************************************콘텐츠*/
+section {
+	position: fixed; top: 0; right: 0;
+	width: 100%; height: 100%;
+}
+article {
+	position: relative;
+	/*width: 400px;*/
+	width: 12%;
+	height: 100%;
+	background: url('../img/divider.png') no-repeat left center;
+	float: right;
+	overflow: hidden;
+}
+
+article h2 {
+	position: absolute; top: 300px; left: 20px;
+	font: 23px Roboto;
+	font-weight: bold;
+	color: #fff;
+	border-left: 3px solid #fff;
+	padding-left: 15px;
+	letter-spacing: 2px;
+	/*transition: all 0.5s;*/
+	z-index: 3;
+}
+article:hover h2 {
+	color: #000;
+	border-left: 3px solid #000;
+	z-index: 3;
+}
+article div {
+	position: absolute; top: 350px; left: 0;
+	width: 100%;
+	/******/
+	height: 0;
+	/*height: 40px;*/
+	background: #fff; opacity: 0.8;
+	transition: all 0.5s;
+}
+article:hover div {	
+	/*****중앙에서 열리는 느낌*****/
+	top: 280px;
+	height: 70px;
+}
+article img {
+	/*width: 100%;*/
+	height: 100%;
+	/*display: none;*/
+	opacity: 0;
+}
+article h3 {
+	position: absolute; bottom: 250px;
+	right: -310px; 
+	/*right: 0;*/
+	font: 40px Roboto;
+	color: #fff;
+	text-align: right;
+	letter-spacing: 2px;
+}
+article:nth-child(2) h3, article:nth-child(4) h3 {
+	color: #000;
+}
+article p {
+	position: absolute; bottom: 100px;
+	right: -310px; 
+	/*right: 0;*/
+	width: 300px;
+	font: 14px Roboto;
+	color: #fff;
+	text-align: right;
+	opacity: 0.8;
+}
+article:nth-child(2) p, article:nth-child(4) p {
+	color: #000;
+}
+
+
+/*******************************************************************푸터*/
+footer {
+	position: fixed; left: 0; bottom: 0;
+	/*픽스드도 자식으로 엡솔루트를 가질수있다*/
+	width: 100%; height: 40px;
+	font: 12px/3.3 Roboto;
+	color: #fff;
+	background: #000;
+	letter-spacing: 2px;
+	opacity: 0.8;
+}
+footer ul {position: absolute; bottom: 0; left: 40px;}
+footer ul li {
+	float: left;
+	margin-right: 40px;
+}
+footer span {position: absolute; bottom: 0; right: 50px;}

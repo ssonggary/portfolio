@@ -1,0 +1,176 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/*font-family: 'Poiret One', cursive;*/
+
+/*초기화*/
+*{margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none; color: #555;}
+body {
+	width: 100%; min-width: 1400px; height: 4000px;
+	/*스크롤링이 Y축으로 진행되기 때문에 헤잇값을 4천으로 준다*/
+	background: #ddd;
+	font-family: 'Poiret One', cursive;
+
+}
+
+
+
+/*헤더*/
+header h1 {
+	position: fixed; right: 20px; top: 20px; z-index: 5;
+	width: 100px; height: 100px;
+	/*box-shadow: 5px 5px 10px #888;*/
+}
+header h1 img {
+	width: 100%;
+	box-shadow: 5px 5px 3px #ccc;
+}
+ul#sns {
+	position: fixed; left: 20px; bottom: 20px; z-index: 5;
+}
+ul#sns li {
+	float: left;
+	margin-right: 25px;
+	/*transition: all 0.5s;*/
+}
+ul#sns li a {
+	display: block;
+	font-size: 25px; font-weight: bold; color: #888;
+	transition: all 0.5s;
+	transform: scale(1);
+}
+ul#sns li:hover a {
+	transform: scale(1.5);
+}
+ul#navi {
+	position: fixed; left: 20px; top: 20px;
+}
+ul#navi li {
+	float: left;
+	margin-right: 25px;
+	font-size: 16px; font-weight: bold; color: #fff;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+ul#navi li:hover {
+	color: #888;
+}
+ul#navi li.on {
+	color: #888;
+}
+
+/*슬로건*/
+div p.txt {
+	position: fixed; right: 20px; top: 50%; /*z-index: 10;*/
+	margin-top: -15px;
+	font-size: 25px; color: #000; letter-spacing: 1px;
+	text-align: right;
+}
+div p.txt strong {
+	color:#aaa;
+}
+
+
+/*섹션*/
+section {
+	position: fixed; left: 0; top: 50%; z-index: 3;
+	margin-top: -200px;
+	width: 5000px; height: 500px;
+}
+section article {
+	box-sizing: border-box;
+	position: relative;
+	width: 180px; height: 400px;
+	overflow: hidden;
+	float: left;
+	margin: 10px;
+	background: #fff;
+	opacity: 0.5;
+	transition: all 0.5s;
+	box-shadow: 5px 5px 5px #ccc;
+	border-radius: 10px;
+}
+section article strong img {
+	/*width: 100%;*/
+	height: 300px; width: auto;
+	/*text-align: center;*/
+	/*margin-left: -60px;*/
+}
+section article h2 {
+	position: absolute; top: 300px; right: 0; z-index: 2;
+	box-sizing: border-box;
+	width: 100%; height: 50px; line-height: 50px;
+	background: #111;
+	text-align: center;
+}
+section article h2 a {
+	display: block;
+	width: 100%; height: 50px;
+	font-size: 14px; font-weight: bold;
+	letter-spacing: 2px; color: #ddd;
+}
+section article strong {
+	display: block;
+	width: 100%; height: 300px;
+	overflow: hidden;
+	/*text-align: center;*/
+	opacity: 0.4;
+	transition: all 0.3s;
+}
+section article p {
+	position: absolute; top: 50%; right: 0;
+	width: 100%; 
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+section article p img {
+	height: 100%;
+	/*height: 500px; */
+	width: auto;
+}
+section article em { 
+	position: absolute; bottom: 50px; right: -300px; 
+	opacity: 0.8; 
+	background: #000; color: #fff;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	transition: all 0.7s;
+}
+section article span {
+	position: absolute; top: 110px; right: -300px; z-index: 2;
+	font-size: 20px;
+	color: #fff; cursor: pointer;
+}
+section article:hover {
+	opacity: 0.9;
+}
+section article.on {
+	width: 780px; height: 500px; 
+	/*margin-top: -250px;*/
+}
+section article.on h2 {
+	top: 100px; height: 100px;
+	background: #111; opacity: 0.3;
+}
+section article.on h2 a {
+	font-size: 30px; color: #fff;
+	line-height: 100px;
+}
+section article.on strong {opacity: 0;}
+section article.on p {height: 500px; opacity: 1; margin-top: -250px;}
+section article.on em { right: 20px; }
+section article.on span { right: 20px; }
+
+footer {
+	position: fixed; bottom: 20px; right: 30px;
+}
+footer .copyright {
+	/*margin-right: 20px;*/
+	/*margin-bottom: 10px;*/
+	font-size: 12px; font-weight:bold;
+	letter-spacing: 2px;
+	color: #666;
+}
