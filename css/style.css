@@ -94,6 +94,7 @@ nav ul li {
     margin-bottom: 105px;
 }
 nav ul li a {display: block;  width: 100%; transition: all 0.2s;}
+nav ul li.show a {font-weight: 800; color: #000;}
 /* //nav */
 
 /* main */

@@ -57,10 +57,23 @@
     
     #section4 .more_item .more_imgwrap {width: 80%; height: 75%;}
 
+    /* section5 contant */
+    .contact_wrap {top: 25%;}
+
 }
 
 /* 화면너비 0-768px */
-@media (max-width: 768px){}
+@media (max-width: 768px){
+    /* nav */
+    nav { width: 35px;}
+    nav ul { margin-top: 55px;}
+
+    /* section1 intro  */
+    #section1 span.intro_TRL {top: -81%; }
+    #section1 span.intro_RTB {bottom: -23%; right: -23%;}
+    #section1 span.intro_BLR {bottom: -82%;}
+    #section1 span.intro_LTB {top: -23%;}
+}
 
 /* 화면너비 0-600px */
 @media (max-width: 600px){}
