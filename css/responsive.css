@@ -32,8 +32,13 @@
     #section3 .work_wrap { width: 84%; padding: 1%;}
     #section3 .work_wrap .work_item {height: 25%; align-items: flex-end;}
     #section3 .work_item .work_imgwrap { height: 77%;}
-    #section3 .work_item .work_imgwrap .work_img {}
-    
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.3rem;}
+    #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 8%;}
+    #section3 .work_item .work_descwrap .work_subtitle span {font-size: 11rem;}
+    #section3 .work_item .work_descwrap .work_desc {font-size: 1.2rem; margin-bottom: 5%;}
+    #section3 .work_item .work_descwrap .view_site {font-size: 1.5rem;}
+
+    /* section4 more */
 }
 
 /* 화면너비 0-768px */

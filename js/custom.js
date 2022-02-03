@@ -2,7 +2,9 @@ $(document).ready(function(){
     
     //로딩 이펙트
     $(window).on('load', function(){
-        $('.log_bg').fadeOut();
+        setTimeout(() => {
+            $('.log_bg').fadeOut();
+        }, 500);
     });
 
     let executed = false;
