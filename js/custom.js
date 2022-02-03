@@ -13,11 +13,13 @@ $(document).ready(function(){
     $(window).scroll(function(){
         let scrollTop = $(window).scrollTop();
         let scrollBottom = $(document).height() - $(window).height() - scrollTop;
+        let windowWidth = $(window).width();
         
         let section1 = $("#section1").height()/2;
         let section2 = $("#section2").offset().top;
         let section3 = $("#section3").offset().top;
         let section4 = $("#section4").offset().top;
+        let section5 = $("#section5").offset().top;
         
         let offset2 = scrollTop - section2;
         let offset3 = scrollTop - section3;
@@ -103,6 +105,12 @@ $(document).ready(function(){
 
         // footer
         if(scrollBottom <= 0){
+            $('.footer').addClass('show');
+        } else {
+            $('.footer').removeClass('show');
+        }
+        //footer 반응형
+        if(windowWidth <= 1024 && section5 <= scrollTop){
             $('.footer').addClass('show');
         } else {
             $('.footer').removeClass('show');

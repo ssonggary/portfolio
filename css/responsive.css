@@ -39,6 +39,24 @@
     #section3 .work_item .work_descwrap .view_site {font-size: 1.5rem;}
 
     /* section4 more */
+    #section4 {margin-bottom: 550vh;}
+    #section4 .more_wrap {margin-left: 10%;}
+    #section4 .more_arrow { top: 4.3%; left: 4%; width: 7%; height: 11.5%;}
+    #section4 .more_item .more_descwrap .more_subtitle {top: 12%; right: 8%;}
+    #section4 .more_item .more_descwrap .more_desc {top: 54%; right: -41%; font-size: 1.4vw;}
+    
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 57%; right: -45%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 58%; right: -46%;}
+    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 58%; right: -47%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 50%; right: -35%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 51%; right: -36%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 50%; right: -35%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 50%; right: -35%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 50%; right: -35%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 50%; right: -35%;}
+    
+    #section4 .more_item .more_imgwrap {width: 80%; height: 75%;}
+
 }
 
 /* 화면너비 0-768px */
