@@ -24,7 +24,6 @@
     #section2 .about_item:nth-child(2) .about_desc {left: -20%;}
     #section2 .about_item:nth-child(3) .about_desc {bottom: 8%; left: -27%;}
     #section2 .skill_title {font-size: 3.5rem;}
-    #section2 .skill li span {}
     #section2 .skill li p {margin-top: -6%;}
     #section2 .skill li:last-child p {margin-top: -2%;}
 
