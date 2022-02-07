@@ -20,128 +20,221 @@ $(document).ready(function(){
     });
 
     //스크롤 이팩트
-    $(window).scroll(function(){
-        let scrollTop = $(window).scrollTop();
-        let scrollBottom = $(document).height() - $(window).height() - scrollTop;
-        
-        let section1 = $("#section1").height()/2;
-        let section2 = $("#section2").offset().top;
-        let section3 = $("#section3").offset().top;
-        let section4 = $("#section4").offset().top;
-        
-        let offset2 = scrollTop - section2;
-        let offset3 = scrollTop - section3;
-        let offset4 = scrollTop - section4;
-        // console.log(section2);
-    
-
-        //section1
-        if( scrollTop >= section1 ){
-            
-            $("#section1").find("figure.intro_imgWrap, div.intro_desc").animate({
-                opacity: 0
-            },800, function(){
-                $(this).addClass("active");
-            });
-        }
-        // 스크롤에 따라 글씨 위치변경
-        $('.intro_TRL').css({right : scrollTop});
-        $('.intro_RTB').css({bottom : scrollTop});
-        $('.intro_BLR').css({left : scrollTop});
-        $('.intro_LTB').css({top : scrollTop});
-
-        //section2에서부터 가로 스크롤링과 nav title이 보이도록
-        if (scrollTop >= section2){
-            $(".nav").animate({left : 0},500);
-            $("#section2").find("h2.about_title").addClass("show");
-            $('#section2 .about_wrap').css('left', -offset2);
-            
-            // about parallax
-            $(".about_item").each(function(){
-                if(scrollTop > $(this).offset().left){
-                    $(this).addClass('show');
-
-                    //counter 
-                    if(!executed){
-                        if(scrollTop > $(".my_skill").offset().left){
-
-                            $(".counter").each(function(){
-                                let $this =$(this);
-                                let progressRate = $this.attr("data-rate");
-                                // counter progress 사용자속성 값 percent >> 95%
-                                // console.log(progressRate);
-    
-                                $({percent: 0}).animate({percent: progressRate},{
-                                    duration: 4000,
-                                    progress: function(){
-                                        let now = this.percent;
-                                        $($this).text(parseInt(now) + '%');
-                                    }
-                                })
-                            });
-                            executed = true;
-                        }
-                    }
-                }
-            });
-        }
-
-        //section3
-        if(scrollTop >= section3){
-
-            $("#section2").find("h2.about_title").removeClass("show");
-            
-            $('.work_title span').css({
-                left : -offset3
-            });
-
-            $('.work_item').each(function(){
-                if(scrollTop > $(this).offset().top){
-                    $(this).addClass('show');
-                }
-            });
-        }
-        
-
-        //section4
-        if(scrollTop >= section4){
-            $('#section4 .more_wrap').addClass('fixed');
-            $('#section4 .more_wrap').css('left', -offset4);
-        } else {
-            $('#section4 .more_wrap').removeClass('fixed');
-        }
-
-        // footer
-        if(scrollBottom <= 0){
-            $('.footer').addClass('show');
-        } else {
-            $('.footer').removeClass('show');
-        }
-
-        //nav
-        $('.content_item').each(function(index){
-            if(scrollTop >= $('.content_item').eq(index).offset().top){
-                $('.nav ul li').eq(index).addClass('show').siblings().removeClass('show');
-            }
-        });
-
-    });
-
-    //footer 반응형
     $(window).resize(function(){
-        let windowWidth = $(window).width();
-        let section5 = $("#section5").offset().top;
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            let scrollBottom = $(document).height() - $(window).height() - scrollTop;
+            let windowWidth = $(window).width();
+            
+            let section1 = $("#section1").height()/2;
+            let section2 = $("#section2").offset().top;
+            let section3 = $("#section3").offset().top;
+            let section4 = $("#section4").offset().top;
+            
+            let offset2 = scrollTop - section2;
+            let offset3 = scrollTop - section3;
+            let offset4 = scrollTop - section4;
+            // console.log(section2);
         
-        if(1024 >= windowWidth){
-            if(scrollTop = section5){
+    
+            //section1
+            if( scrollTop >= section1 ){
+                
+                $("#section1").find("figure.intro_imgWrap, div.intro_desc").animate({
+                    opacity: 0
+                },800, function(){
+                    $(this).addClass("active");
+                });
+            }
+            // 스크롤에 따라 글씨 위치변경
+            $('.intro_TRL').css({right : scrollTop});
+            $('.intro_RTB').css({bottom : scrollTop});
+            $('.intro_BLR').css({left : scrollTop});
+            $('.intro_LTB').css({top : scrollTop});
+    
+            //section2에서부터 가로 스크롤링과 nav title이 보이도록
+            if (scrollTop >= section2){
+                $(".nav").animate({left : 0},500);
+                $("#section2").find("h2.about_title").addClass("show");
+                
+                if(windowWidth >= 1024){
+                    $('#section2 .about_wrap').css('left', -offset2);
+                
+                    // about parallax
+                    $(".about_item").each(function(){
+                        if(scrollTop > $(this).offset().left){
+                            $(this).addClass('show');
+        
+                            //counter 
+                            if(!executed){
+                                if(scrollTop > $(".my_skill").offset().left){
+        
+                                    $(".counter").each(function(){
+                                        let $this =$(this);
+                                        let progressRate = $this.attr("data-rate");
+                                        // counter progress 사용자속성 값 percent >> 95%
+                                        // console.log(progressRate);
+            
+                                        $({percent: 0}).animate({percent: progressRate},{
+                                            duration: 4000,
+                                            progress: function(){
+                                                let now = this.percent;
+                                                $($this).text(parseInt(now) + '%');
+                                            }
+                                        })
+                                    });
+                                    executed = true;
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+
+            
+    
+            //section3
+            if(scrollTop >= section3){
+    
+                $("#section2").find("h2.about_title").removeClass("show");
+                
+                $('.work_title span').css({
+                    left : -offset3
+                });
+    
+                $('.work_item').each(function(){
+                    if(scrollTop > $(this).offset().top){
+                        $(this).addClass('show');
+                    }
+                });
+            }
+            
+            //section4
+            if(scrollTop >= section4){
+                $('#section4 .more_wrap').addClass('fixed');
+                $('#section4 .more_wrap').css('left', -offset4);
+            } else {
+                $('#section4 .more_wrap').removeClass('fixed');
+            }
+    
+            // footer
+            if(scrollBottom <= 0){
                 $('.footer').addClass('show');
             } else {
                 $('.footer').removeClass('show');
             }
-        } 
+    
+            //nav
+            $('.content_item').each(function(index){
+                if(scrollTop >= $('.content_item').eq(index).offset().top){
+                    $('.nav ul li').eq(index).addClass('show').siblings().removeClass('show');
+                }
+            });
+    
+            // 반응형
+            //footer
+            if(1024 >= windowWidth){
+                if(scrollBottom <= 0){
+                    $('.footer').addClass('show');
+                } else {
+                    $('.footer').removeClass('show');
+                }
+            }
+            if(768 >= windowWidth) {
+                if(scrollTop >= section2){
+                    $('.small_nav').addClass('active');
+                    $('#section2 .about_wrap').css('left', 0);
+                    // console.log(scrollTop);
+                    
+                    $(".about_item").each(function(){
+                        if(scrollTop > ($(this).offset().top) - 200){
+                            $(this).addClass('show');
+    
+                            //counter 
+                            if(!executed){
+                                if(scrollTop > $(".my_skill").offset().top - 600){
+        
+                                    $(".counter").each(function(){
+                                        let $this =$(this);
+                                        let progressRate = $this.attr("data-rate");
+                                        // counter progress 사용자속성 값 percent >> 95%
+                                        // console.log(progressRate);
+            
+                                        $({percent: 0}).animate({percent: progressRate},{
+                                            duration: 4000,
+                                            progress: function(){
+                                                let now = this.percent;
+                                                $($this).text(parseInt(now) + '%');
+                                            }
+                                        })
+                                    });
+                                    executed = true;
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+            
+        });
     });
+    $(window).trigger('resize'); //강제로 호출하는 함수
+
+    //반응형 네비 햄버거 버튼
+    let countNum =0;
+    $('.ham').click(function(){
+        $('.ham').toggleClass('active');
+        // $('.small_nav ul').slideToggle();
+        // countNum++;
+        // if(countNum%2 == 1){openNav();}else {closeNav();}
+        // if(countNum%2 == 0){countNum=0;}
+    });
+
+    function openNav(){
+        $('.ham').css('height','20px');
+		$('.ham').children('span').eq(0).css({
+			transform: 'rotate(45deg)',
+			position: 'absolute', 
+			top: '6px',
+			transition: 'all 0.5s'
+		});
+		$('.ham').children('span').eq(2).css({
+			transform: 'rotate(-45deg)',
+			position: 'absolute', 
+			bottom: '11px',
+			transition: 'all 0.5s'
+		});
+		$('.ham').children('span').eq(1).css({
+			display: 'none',
+			transition: 'all 0.5s'
+		});
+    }
+
+    function closeNav(){
+		$('.ham').children('span').eq(0).css({
+			transform: 'rotate(0deg)',
+			position: 'absolute', 
+			top: '-2px',
+			transition: 'all 0.5s',
+		});
+		$('.ham').children('span').eq(2).css({
+			transform: 'rotate(0deg)',
+			// position: 'absolute', 
+			bottom: '2px',
+			transition: 'all 0.5s'
+		});
+		$('.ham').children('span').eq(1).css({
+			display: 'block',
+			transition: 'all 0.5s'
+		});
+	}
+
 });
 
+//브라우저 크기 변화에 따른 자동 새로고침
+// window.onresize = function(){
+//     document.location.reload();
+// };
 
 // section5 contact
 window.addEventListener('mousemove', handleMouseMove);

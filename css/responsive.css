@@ -65,27 +65,99 @@
 /* 화면너비 0-768px */
 @media (max-width: 768px){
     /* nav */
-    nav { width: 35px;}
-    nav ul { margin-top: 55px;}
-    nav .ham {
-        position: absolute; top: 10%; left: 20%;
+    nav {display: none;}
+    nav ul {display: none;}
+    .small_nav {
         display: block;
-        width: 20%;
+        width: 100%; height: 8%;
+        position: fixed; top: -20%; 
+        z-index: 2000;
+        backdrop-filter: blur(8px);
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.8s;
+    }
+    .small_nav.active {top: 0%;}
+    .small_nav .logo {
+        width: 30px; height: 30px;
+        margin: 10px;
+        font-size: 1.8rem;
+        text-align: center; line-height: 30px;
+        border: 1px solid #333;
+    }
+    .small_nav .ham {
+        margin: 10px;
+        margin-top: 15px;
+        display: block;
+        position: relative;
+        width: 3.5%;
         cursor: pointer;
-        transition: all 0.4s;
+        transition: 0.8s;
     }
     .ham span {
 		display: block;
-		width: 100%; height: 2px; 
+        position: absolute;
+		width: 100%; height: 3px; 
 		background-color: #333;
+        transition: 0.8s;
 	}
-    .hamburger-box span:nth-child(2){margin: 7px 0;}
+    .ham span:nth-child(1){top: 0;}
+    .ham span:nth-child(2){top: 9px;}
+    .ham span:nth-child(3){top: 18px;}
+    .small_nav ul {
+        display: none;
+        position: absolute; left: 0; top: 101%;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        /* backdrop-filter: blur(8px); */
+        background-color: #fff;
+    }
+    .ham.active span:nth-child(1){position: absolute; top: 9px; transform: rotate(45deg);}
+    .ham.active span:nth-child(2){display: none;}
+    .ham.active span:nth-child(3){position: absolute; top: 9px; transform: rotate(-45deg);}
 
     /* section1 intro  */
     #section1 span.intro_TRL {top: -81%; }
     #section1 span.intro_RTB {bottom: -23%; right: -23%;}
     #section1 span.intro_BLR {bottom: -82%;}
     #section1 span.intro_LTB {top: -23%;}
+
+    /* section2 about me */
+    #section2 {width: 100%; top: 80%;}
+    #section2 .about_container {width: 100%; position: absolute; top: 55%;}
+    #section2 .about_title {
+        top: 5%;
+        font-size: 27vh;
+    }
+    #section2 .about_wrap{
+        width: 100%; 
+        position: absolute; top: 35%; 
+        flex-wrap: wrap;
+    }
+    #section2 .about_wrap .about_item {
+        width: 100%;
+        margin-left: 0;
+        padding: 1%;
+    }
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {width: 60%; height: 70%; left: 5%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {width: 65%; height: 70%; bottom: 5%;}
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {width: 50%; height: 75%; right: 0%;}
+    #section2 .about_item:nth-child(1) .about_desc { top: 50%; left: 36%; }
+    #section2 .about_item:nth-child(2) .about_desc { top: 13%; left: -18%;}
+    #section2 .about_item:nth-child(3) .about_desc { bottom: 11%; left: 4%;}
+    #section2 .skill_title {margin-top: -1%;}
+    .about_item .about_imgWrap {
+        transform: translateY(15%);
+        transition: all 0.8s cubic-bezier(0, 0.66, 0.38, 1.01);
+    }
+    .about_item .about_desc{
+        transform: translateY(10%);
+        transition: all 1s cubic-bezier(0, 0.66, 0.38, 1.01);
+    }
+
+    /* section3 work */
+    #section3 .work_title {left: -159%;}
 }
 
 /* 화면너비 0-600px */
