@@ -79,6 +79,7 @@
     }
     .small_nav.active {top: 0%;}
     .small_nav .logo {
+        position: relative; z-index: 2000;
         width: 30px; height: 30px;
         margin: 10px;
         font-size: 1.8rem;
@@ -89,7 +90,7 @@
         margin: 10px;
         margin-top: 15px;
         display: block;
-        position: relative;
+        position: relative; z-index: 2000;
         width: 3.5%;
         cursor: pointer;
         transition: 0.8s;
@@ -105,14 +106,19 @@
     .ham span:nth-child(2){top: 9px;}
     .ham span:nth-child(3){top: 18px;}
     .small_nav ul {
-        display: none;
-        position: absolute; left: 0; top: 101%;
+        position: absolute; left: 0; top: -700%;
         width: 100%;
         text-align: center;
         font-size: 2.5rem;
+        transition: 1s;
         /* backdrop-filter: blur(8px); */
         background-color: #fff;
     }
+    .small_nav ul li {
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    .small_nav ul.active {top: 100%;}
     .ham.active span:nth-child(1){position: absolute; top: 9px; transform: rotate(45deg);}
     .ham.active span:nth-child(2){display: none;}
     .ham.active span:nth-child(3){position: absolute; top: 9px; transform: rotate(-45deg);}
@@ -127,7 +133,7 @@
     #section2 {width: 100%; top: 80%;}
     #section2 .about_container {width: 100%; position: absolute; top: 55%;}
     #section2 .about_title {
-        top: 5%;
+        top: 5%; left: 2.5%;
         font-size: 27vh;
     }
     #section2 .about_wrap{
@@ -157,14 +163,155 @@
     }
 
     /* section3 work */
-    #section3 .work_title {left: -159%;}
+    #section3 .work_title {left: -156%;}
+    #section3 .work_wrap {width: 88%;}
+    #section3 .work_wrap .work_item {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    #section3 .work_wrap .work_item:nth-child(odd) {flex-direction: column;}
+    #section3 .work_item .work_imgwrap {
+        width: 75%; height: 65%;
+        position: absolute; right: 0;
+    }
+    #section3 .work_item .work_descwrap {width: 100%; height: 30%;}
+    #section3 .work_wrap .work_item:nth-child(odd) .work_descwrap { text-align: left;}
+    #section3 .work_item .work_descwrap .work_subtitle {position: relative; top: 46%; left: 3%; font-size: 3rem;}
+    #section3 .work_item .work_descwrap .work_subtitle span {font-size: 12rem;}
+    #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 10%;}
+    #section3 .work_item .work_descwrap .work_desc {
+        margin-top: 0%; width: 77%;
+        margin-left: 24%; 
+        margin-bottom: -1%;
+        word-break: keep-all;   
+    }
+    #section3 .work_item:nth-child(3) .work_descwrap .work_desc {margin-bottom: -5%;}
+    #section3 .work_item .work_descwrap .view_site {margin-left: 2%;}
+
+    /* section4 more*/
+    #section4 {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 320vh;
+    }
+    #section4 .more_wrap {
+        width: 100%; height: 100%;
+        margin-left: 0%;
+        margin-top: 20%;
+    }
+    #section4 .more_wrap.fixed {position: absolute;}
+    #section4 .more_arrow{
+        top: 88.3%; left: 0%;
+        width: 8%; height: 39.5%;
+    }
+    #section4 .more_wrap.fixed .more_arrow {position: absolute;}
+    #section4 .more_title{
+        top: 63%; left: 8.5%;
+        font-size: 12vw;
+    }
+    #section4 .more_wrap.fixed .more_title{position: absolute;}
+    #section4 .more_container{
+        flex-wrap: wrap;
+        left: 0%;
+    }
+    #section4 .more_item {width: 50%; height: 100%;}
+    #section4 .more_item .more_descwrap .more_subtitle{ top: 13%; right: 19%; font-size: 5vw;}
+    #section4 .more_item .more_descwrap .more_desc{
+        font-size: 2vw;
+        top: 56%; right: -24%;
+    }
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 59%; right: -27%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 60%; right: -28%;}
+    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 60%; right: -29%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item .more_imgwrap{width: 70%;}
+    #section4 .more_item:nth-child(4) .more_imgwrap .more_view{background-size: 335px;}
+
+    /* section5 contact */
+    .contact_wrap{ top: 30%;}
+
 }
 
 /* 화면너비 0-600px */
-@media (max-width: 600px){}
+@media (max-width: 600px){
+    /* nav */
+    .small_nav .ham {width: 4.5%;}
+    
+    /* section1 intro*/
+    #section1 span {font-size: 4vw;}
+    #section1 span.intro_TRL {top: -81%;}
+    #section1 span.intro_RTB {bottom: -21%; right: -31%;}
+    #section1 span.intro_RTB {bottom: -21%;}
+    #section1 span.intro_LTB {top: -21%; left: -31%;}
+
+    /* section2 about me*/
+    #section2{margin-bottom: 310vh;}
+    #section2 .about_title {
+        font-size: 21vh;
+        left: 3.5%;
+    }
+    #section2 .about_wrap .about_item {height: 70%;}
+    #section2 .about_wrap .about_item:last-child { height: 100%;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {
+        width: 70%;height: 90%;
+        left: 0%;
+    }
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {
+        width: 68%; height: 85%;
+        right: 5%; bottom: 0%;
+    }
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {
+        width: 56%; height: 94%;
+    }
+    #section2 .about_wrap .about_item .about_desc { font-size: 1.4rem;}
+    #section2 .about_item:nth-child(1) .about_desc {top: 63%; left: 35%;}
+    #section2 .about_item:nth-child(2) .about_desc {top: 16%; left: -16%;}
+    #section2 .about_item:nth-child(3) .about_desc {bottom: 13%; left: 3%;}
+    #section2 .about_item .about_desc span {text-indent: 0%;}
+    
+    /* section3 work */
+    #section3 .work_title{font-size: 16vh; left: -204%;}
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.7rem;}
+    #section3 .work_item .work_descwrap .work_subtitle span {font-size: 11rem;}
+    #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 14%;}
+    #section3 .work_item .work_descwrap .work_desc { margin-left: 26%; font-size: 1.1rem;}
+    #section3 .work_item .work_descwrap .view_site {font-size: 1.3rem; top: -29%;}
+    #section3 .work_item:nth-child(3) .work_descwrap .view_site {top: -33%;}
+
+    /* section4 more */
+    #section4 {margin-bottom: 270vh;}
+    #section4 .more_wrap {opacity: 1; margin-top: -10%;}
+    #section4 .more_title {font-size: 13vw; top: 63%; left: 9.5%;}
+    #section4 .more_arrow {width: 9%; height: 35.5%; top: 82.3%;}
+    #section4 .more_item {height: 95%;}
+    #section4 .more_item .more_descwrap .more_subtitle {font-size: 6vw; top: 12%; right: 11%;}
+    #section4 .more_item .more_descwrap .more_desc {
+        font-size: 2.4vw;
+        top: 57%; right: -39%;
+    }
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 59%; right: -43%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 60%; right: -44%;}
+    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 61%; right: -45%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 52%; right: -32%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 52%; right: -33%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 52%; right: -33%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 52%; right: -32%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 52%; right: -33%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 52%; right: -33%;}
+    #section4 .more_item .more_imgwrap {width: 77%;}
+    #section4 .more_item:nth-child(4) .more_imgwrap .more_view {background-size: 280px;}
+}
 
 /* 화면너비 0-480px */
-@media (max-width: 480px){}
+@media (max-width: 480px){
+    
+}
 
 /* 화면너비 0-320px */
 @media (max-width: 320px){}

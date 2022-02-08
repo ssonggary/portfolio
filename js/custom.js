@@ -112,7 +112,9 @@ $(document).ready(function(){
             //section4
             if(scrollTop >= section4){
                 $('#section4 .more_wrap').addClass('fixed');
-                $('#section4 .more_wrap').css('left', -offset4);
+                if(windowWidth >= 1024){
+                    $('#section4 .more_wrap').css('left', -offset4);
+                }
             } else {
                 $('#section4 .more_wrap').removeClass('fixed');
             }
@@ -175,59 +177,18 @@ $(document).ready(function(){
                     });
                 }
             }
-            
+
         });
     });
     $(window).trigger('resize'); //강제로 호출하는 함수
 
     //반응형 네비 햄버거 버튼
-    let countNum =0;
     $('.ham').click(function(){
-        $('.ham').toggleClass('active');
-        // $('.small_nav ul').slideToggle();
-        // countNum++;
-        // if(countNum%2 == 1){openNav();}else {closeNav();}
-        // if(countNum%2 == 0){countNum=0;}
+        $('.ham, .small_nav ul').toggleClass('active');
     });
-
-    function openNav(){
-        $('.ham').css('height','20px');
-		$('.ham').children('span').eq(0).css({
-			transform: 'rotate(45deg)',
-			position: 'absolute', 
-			top: '6px',
-			transition: 'all 0.5s'
-		});
-		$('.ham').children('span').eq(2).css({
-			transform: 'rotate(-45deg)',
-			position: 'absolute', 
-			bottom: '11px',
-			transition: 'all 0.5s'
-		});
-		$('.ham').children('span').eq(1).css({
-			display: 'none',
-			transition: 'all 0.5s'
-		});
-    }
-
-    function closeNav(){
-		$('.ham').children('span').eq(0).css({
-			transform: 'rotate(0deg)',
-			position: 'absolute', 
-			top: '-2px',
-			transition: 'all 0.5s',
-		});
-		$('.ham').children('span').eq(2).css({
-			transform: 'rotate(0deg)',
-			// position: 'absolute', 
-			bottom: '2px',
-			transition: 'all 0.5s'
-		});
-		$('.ham').children('span').eq(1).css({
-			display: 'block',
-			transition: 'all 0.5s'
-		});
-	}
+    $('.small_nav ul li').click(function(){
+        $('.ham, .small_nav ul').removeClass('active');
+    });
 
 });
 
