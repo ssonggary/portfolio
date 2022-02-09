@@ -166,7 +166,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
 #section1 span.intro_TRL {top: -86%; right: 0%; width: 100%; text-align: right;}
 #section1 span.intro_RTB {bottom: 0%; right: -19%; transform: rotate(-90deg);}
 #section1 span.intro_BLR {bottom: -86%; left: 0%; transform: rotate(-180deg); width: 100%; text-align: right;}
-#section1 span.intro_LTB {top: 0%; left: -19%; transform: rotate(90deg);}
+#section1 span.intro_LTB {top: -1%; left: -19%; transform: rotate(90deg);}
 /* //intro */
 
 /* section2 about me */

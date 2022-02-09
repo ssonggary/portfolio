@@ -127,7 +127,7 @@
     #section1 span.intro_TRL {top: -81%; }
     #section1 span.intro_RTB {bottom: -23%; right: -23%;}
     #section1 span.intro_BLR {bottom: -82%;}
-    #section1 span.intro_LTB {top: -23%;}
+    #section1 span.intro_LTB {top: -23.5%;}
 
     /* section2 about me */
     #section2 {width: 100%; top: 80%;}
@@ -163,7 +163,7 @@
     }
 
     /* section3 work */
-    #section3 .work_title {left: -156%;}
+    #section3 .work_title {left: -157.5%;}
     #section3 .work_wrap {width: 88%;}
     #section3 .work_wrap .work_item {
         flex-direction: column;
@@ -246,9 +246,9 @@
     /* section1 intro*/
     #section1 span {font-size: 4vw;}
     #section1 span.intro_TRL {top: -81%;}
-    #section1 span.intro_RTB {bottom: -21%; right: -31%;}
+    #section1 span.intro_RTB {bottom: -22.5%; right: -31%;}
     #section1 span.intro_RTB {bottom: -21%;}
-    #section1 span.intro_LTB {top: -21%; left: -31%;}
+    #section1 span.intro_LTB {top: -21.5%; left: -31%;}
 
     /* section2 about me*/
     #section2{margin-bottom: 310vh;}
@@ -276,7 +276,7 @@
     #section2 .about_item .about_desc span {text-indent: 0%;}
     
     /* section3 work */
-    #section3 .work_title{font-size: 16vh; left: -204%;}
+    #section3 .work_title{font-size: 16vh; left: -205.5%;}
     #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.7rem;}
     #section3 .work_item .work_descwrap .work_subtitle span {font-size: 11rem;}
     #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 14%;}
@@ -333,7 +333,7 @@
 
     /* section3 work */
     #section3 {height: 340vh;}
-    #section3 .work_title {font-size: 22vh; left: -252.5%; color: #eee;}
+    #section3 .work_title {font-size: 22vh; top: 55%; left: -252.5%; color: #eee;}
     #section3 .work_item .work_imgwrap {width: 88%; height: 65%;}
     #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 380px;}
     #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.3rem; left: -15%; top: 75%;}
@@ -376,9 +376,9 @@
     /* section1  intro*/
     #section1 span {font-size: 4.3vw;}
     #section1 span.intro_TRL {top: -78%;}
-    #section1 span.intro_RTB {bottom: -44%; right: -33%;}
+    #section1 span.intro_RTB {bottom: -39%; right: -33%;}
     #section1 span.intro_BLR {bottom: -78%;}
-    #section1 span.intro_LTB {top: -44%; left: -33%;}
+    #section1 span.intro_LTB {top: -39%; left: -33%;}
 
     /* section2 about me */
     #section2 .about_title {font-size: 18vh;}
