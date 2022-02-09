@@ -311,7 +311,105 @@
 /* 화면너비 0-480px */
 @media (max-width: 480px){
     
+    /* nav */
+    .small_nav .ham {width: 5.5%;}
+
+    /* section1 intro */
+    #section1 span.intro_TRL {top: -80%;}
+    #section1 span.intro_RTB {bottom: -32%;}
+    #section1 span.intro_BLR {bottom: -81%;}
+    #section1 span.intro_LTB {top: -32%;}
+
+    /* section2 about me */
+    #section2 .about_title {text-align: center; left: 0%; font-size: 25vh;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {width: 80%; height: 80%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {width: 80%; height: 70%; right: 2%;}
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {height: 80%;}
+    #section2 .about_wrap .about_item .about_desc {font-size: 1.1rem;}
+    #section2 .about_item:nth-child(1) .about_desc {top: 90%;}
+    #section2 .about_item:nth-child(2) .about_desc { top: 19%; left: -14%;}
+    #section2 .about_item:nth-child(3) .about_desc {left: 1%;}
+    #section2 .skill li .another .icon {background-size: 70px;}
+
+    /* section3 work */
+    #section3 {height: 340vh;}
+    #section3 .work_title {font-size: 22vh; left: -252.5%; color: #eee;}
+    #section3 .work_item .work_imgwrap {width: 88%; height: 65%;}
+    #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 380px;}
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.3rem; left: -15%; top: 75%;}
+    #section3 .work_item .work_descwrap .work_desc {margin-left: 13%; margin-top: 12%; font-size: 1.2rem; width: 82%;}
+    #section3 .work_item .work_descwrap .view_site {top: 12%; margin-left: 69%;}
+    #section3 .work_item:nth-child(3) .work_descwrap .view_site { top: 20%;}
+
+    /* section4 more */
+    #section4 {height: 500vh; margin-bottom: 280vh;}
+    #section4 .more_wrap {margin-top: 30%;}
+    #section4 .more_container {height: 100%;}
+    #section4 .more_arrow { width: 10%; height: 6%; top: -11.8%; left: 3%;}
+    #section4 .more_title {font-size: 14vw; left: 14.5%; top: -15%;}
+    #section4 .more_item {width: 100%; height: 15%;}
+    #section4 .more_item .more_descwrap .more_subtitle {font-size: 9vw; top: 10%; right: 6%;}
+    #section4 .more_item .more_descwrap .more_desc {font-size: 4vw; top: 48%; right: -19%;}
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc {top: 52%; right: -22%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc {top: 53%; right: -23%;}
+    #section4 .more_item:nth-child(4) .more_descwrap .more_desc {top: 53%; right: -24%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc {top: 43%; right: -14%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc {top: 44%; right: -15%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc {top: 44%; right: -15%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc {top: 43%; right: -14%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc {top: 43%; right: -14%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc {top: 43%; right: -15%;}
+    #section4 .more_item .more_imgwrap {width: 65%; height: 88%;}
+
+    /* section5 contact */
+    .contact_wrap {top: 35%;} 
+
+
 }
 
 /* 화면너비 0-320px */
-@media (max-width: 320px){}
+@media (max-width: 320px){
+    
+    /* nav */
+    .small_nav .ham {width: 7.5%;}
+    
+    /* section1  intro*/
+    #section1 span {font-size: 4.3vw;}
+    #section1 span.intro_TRL {top: -78%;}
+    #section1 span.intro_RTB {bottom: -44%; right: -33%;}
+    #section1 span.intro_BLR {bottom: -78%;}
+    #section1 span.intro_LTB {top: -44%; left: -33%;}
+
+    /* section2 about me */
+    #section2 .about_title {font-size: 18vh;}
+    #section2 .about_wrap .about_item:last-child {margin-top: 10%;}
+    #section2 .about_wrap .about_item .about_imgWrap .about_img {width: 100%;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {height: 70%; top: 5%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {height: 65%; right: 0%;}
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {height: 70%;}
+    #section2 .about_wrap .about_item .about_desc {text-align: center;}
+    #section2 .about_item:nth-child(1) .about_desc {top: 76%; left: 0%;}
+    #section2 .about_item:nth-child(2) .about_desc {top: 16%; left: -1%;}
+    #section2 .about_item:nth-child(3) .about_desc {left: 0%; bottom: 71%;}
+    #section2 .skill li .another {height: 90px;}
+    #section2 .skill li p {font-size: 4rem;}
+    #section2 .skill li .another .icon {width: 60px; height: 60px; background-size: 50px;}
+    
+    /* section3 work*/
+    #section3 .work_title { font-size: 15vh; left: -392.5%; top: 55%;}
+    #section3 .work_wrap {width: 100%;}
+    #section3 .work_item .work_imgwrap {width: 77%; height: 50%;}
+    #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 260px;}
+    #section3 .work_item:nth-child(2) .work_imgwrap .work_img {background-size: 320px;}
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 1.8rem; left: 0%; top: 80%;}
+    #section3 .work_item .work_descwrap .work_subtitle span { font-size: 7rem;}
+    #section3 .work_item .work_descwrap .work_desc { font-size: 1rem; margin-left: 24%; margin-top: 29%;}
+    #section3 .work_item .work_descwrap .view_site {font-size: 1.1rem;}
+
+    /* section4 more*/
+    #section4 {margin-bottom: 20vh;}
+    #section4 .more_arrow {height: 4%; top: -12.9%;}
+    #section4 .more_item {height: 10%;}
+    #section4 .more_item:nth-child(4) .more_imgwrap .more_view {background-size: 250px;}
+
+}
