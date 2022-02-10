@@ -182,11 +182,10 @@
     #section3 .work_item .work_descwrap .work_subtitle span {font-size: 28vw;}
     #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 0%;}
     #section3 .work_item .work_descwrap .work_desc {
-        position: absolute; top: 39%;
+        position: absolute; top: 39%; left: 24%;
         width: 77%;
         font-size: 2.5vw;
         margin-top: 0%;
-        margin-left: 24%; 
         word-break: keep-all;   
     }
     #section3 .work_item .work_descwrap .view_site {margin-left: 2%; top: 47%; font-size: 3vw;}
@@ -275,12 +274,12 @@
     #section2 .about_item .about_desc span {text-indent: 0%;}
     
     /* section3 work */
-    #section3 .work_item .work_descwrap .work_subtitle {font-size: 7vw; top: 50%;}
+    #section3 .work_item .work_imgwrap {width: 80%; height: 60%;}
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 7vw; top: -115%;}
     #section3 .work_item .work_descwrap .work_subtitle span {font-size: 29vw;}
-    #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 14%;}
-    #section3 .work_item .work_descwrap .work_desc { margin-left: 26%; font-size: 3vw; margin-top: 2%;}
-    #section3 .work_item .work_descwrap .view_site {font-size: 3vw; top: -29%;}
-    #section3 .work_item:nth-child(3) .work_descwrap .view_site {top: -33%;}
+    #section3 .work_item .work_descwrap .work_desc {font-size: 3vw; top: 30%;}
+    #section3 .work_item .work_descwrap .view_site {font-size: 3vw; top: 36%;}
+
 
     /* section4 more */
     #section4 {margin-bottom: 270vh;}
@@ -336,13 +335,13 @@
     /* section3 work */
     #section3 {height: 340vh;}
     #section3 .work_title {width: 23vw; font-size: 30vw; line-height: 24vw; color: #eee;}
-    #section3 .work_item .work_imgwrap {width: 88%; height: 65%;}
-    #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 380px;}
-    #section3 .work_item .work_descwrap .work_subtitle {font-size: 7.7vw; left: -15%; top: 75%;}
+    #section3 .work_item .work_imgwrap {width: 91%;}
+    #section3 .work_item .work_descwrap {width: 100%;}
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 7.7vw; left: -14%;}
     #section3 .work_item .work_descwrap .work_subtitle span {font-size: 36vw;}
-    #section3 .work_item .work_descwrap .work_desc {margin-left: 13%; margin-top: 14%; font-size: 4vw; width: 82%;}
-    #section3 .work_item .work_descwrap .view_site {top: 12%; margin-left: 69%; font-size: 4vw;}
-    #section3 .work_item:nth-child(3) .work_descwrap .view_site { top: 20%;}
+    #section3 .work_item .work_descwrap .work_desc { width: 85%; font-size: 4vw; top: 10%; left: 13%;}
+    #section3 .work_item .work_descwrap .view_site {font-size: 4vw; top: 55%; left: 12%; margin-left: 0%;}
+    #section3 .work_item:nth-child(3) .work_descwrap .view_site {top: 90%;}
 
     /* section4 more */
     #section4 {height: 500vh; margin-bottom: 280vh;}
@@ -395,15 +394,15 @@
     #section2 .skill li .another .icon {width: 60px; height: 60px; background-size: 50px;}
     
     /* section3 work*/
+    #section3 {height: 280vh;}
     #section3 .work_title { font-size: 28vw;}
     #section3 .work_wrap {width: 100%;}
     #section3 .work_item .work_imgwrap {width: 77%; height: 50%;}
-    #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 260px;}
-    #section3 .work_item:nth-child(2) .work_imgwrap .work_img {background-size: 320px;}
-    #section3 .work_item .work_descwrap .work_subtitle {font-size: 8.5vw; left: -1%; top: 80%;}
-    /* #section3 .work_item .work_descwrap .work_subtitle span { font-size: ;} */
-    #section3 .work_item .work_descwrap .work_desc { font-size: 5vw; margin-left: 24%; margin-top: 29%;}
-    #section3 .work_item .work_descwrap .view_site {font-size: 5.2vw;}
+    #section3 .work_item .work_imgwrap .work_img {background-size: 100%;}
+    #section3 .work_item .work_descwrap .work_subtitle {font-size: 8.5vw; left: 0%; top: -100%;}
+    #section3 .work_item .work_descwrap .work_desc { font-size: 5vw; width: 80%; top: 6%; left: 23%;}
+    #section3 .work_item .work_descwrap .view_site {font-size: 5.2vw; top: 70%; left: 23%;}
+    #section3 .work_item:nth-child(3) .work_descwrap .view_site {top: 93%;}
 
     /* section4 more*/
     #section4 {margin-bottom: 20vh;}
