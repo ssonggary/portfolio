@@ -28,7 +28,7 @@
     #section2 .skill li:last-child p {margin-top: -2%;}
 
     /* section3 work */
-    #section3 .work_title {top: 63%; left: -113%; height: 7%; line-height: 107%; font-size: 14vw;}
+    #section3 .work_title {left: 3.5%;}
     #section3 .work_wrap { width: 84%; padding: 1%;}
     #section3 .work_wrap .work_item {height: 25%; align-items: flex-end;}
     #section3 .work_item .work_imgwrap { height: 77%;}
@@ -163,7 +163,7 @@
     }
 
     /* section3 work */
-    #section3 .work_title {left: -157.5%; font-size: 16vw;}
+    #section3 .work_title {width: 15vw; left: 0%; font-size: 16vw; line-height: 16vw;}
     #section3 .work_wrap {width: 88%;}
     #section3 .work_wrap .work_item {
         flex-direction: column;
@@ -273,7 +273,6 @@
     #section2 .about_item .about_desc span {text-indent: 0%;}
     
     /* section3 work */
-    #section3 .work_title{font-size: 18vw; left: -205.5%;}
     #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.7rem;}
     #section3 .work_item .work_descwrap .work_subtitle span {font-size: 11rem;}
     #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 14%;}
@@ -334,7 +333,7 @@
 
     /* section3 work */
     #section3 {height: 340vh;}
-    #section3 .work_title {font-size: 28vw; top: 55%; left: -253.5%; color: #eee;}
+    #section3 .work_title {width: 23vw; font-size: 30vw; line-height: 24vw; color: #eee;}
     #section3 .work_item .work_imgwrap {width: 88%; height: 65%;}
     #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 380px;}
     #section3 .work_item .work_descwrap .work_subtitle {font-size: 2.3rem; left: -15%; top: 75%;}
@@ -385,7 +384,7 @@
     #section2 .about_title {font-size: 34vw;}
     #section2 .about_wrap .about_item:last-child {margin-top: 10%;}
     #section2 .about_wrap .about_item .about_imgWrap .about_img {width: 100%;}
-    #section2 .about_wrap .about_item:nth-child(1) .about_img {height: 70%; top: 5%;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {height: 56%; top: 5%;}
     #section2 .about_wrap .about_item:nth-child(2) .about_img {height: 65%; right: 0%;}
     #section2 .about_wrap .about_item:nth-child(3) .about_img {height: 70%;}
     #section2 .about_wrap .about_item .about_desc {text-align: center;}
@@ -397,7 +396,7 @@
     #section2 .skill li .another .icon {width: 60px; height: 60px; background-size: 50px;}
     
     /* section3 work*/
-    #section3 .work_title { font-size: 28vw; left: -393.5%; top: 55%;}
+    #section3 .work_title { font-size: 28vw;}
     #section3 .work_wrap {width: 100%;}
     #section3 .work_item .work_imgwrap {width: 77%; height: 50%;}
     #section3 .work_item:nth-child(1) .work_imgwrap .work_img {background-size: 260px;}

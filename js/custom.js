@@ -99,7 +99,7 @@ $(document).ready(function(){
                 $("#section2").find("h2.about_title").removeClass("show");
                 
                 $('.work_title span').css({
-                    left : -offset3
+                    top : -offset3
                 });
     
                 $('.work_item').each(function(){
