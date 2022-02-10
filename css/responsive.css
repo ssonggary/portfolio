@@ -32,6 +32,7 @@
     #section3 .work_wrap { width: 84%; padding: 1%;}
     #section3 .work_wrap .work_item {height: 25%; align-items: flex-end;}
     #section3 .work_item .work_imgwrap { height: 77%;}
+    #section3 .work_item:nth-child(2) .work_imgwrap .work_img {background-size: 440px;}
     #section3 .work_item .work_descwrap .work_subtitle {font-size: 3.6vw;}
     #section3 .work_item:nth-child(3) .work_descwrap .work_subtitle {margin-top: 8%;}
     #section3 .work_item .work_descwrap .work_subtitle span {font-size: 17vw;}
