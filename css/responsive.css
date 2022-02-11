@@ -7,6 +7,12 @@
     
     /* nav */
     nav { width: 35px;}
+    nav .logo {
+        width: 25px; height: 25px;
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+    nav ul li {font-size: 1.5rem;}
     
     /* section1 intro  */
     #section1 span {font-size: 3vw;}
