@@ -262,25 +262,19 @@
     #section1 span.intro_LTB {top: -34.5%; left: -31%;}
 
     /* section2 about me*/
-    #section2{margin-bottom: 310vh;}
+    #section2{margin-bottom: 370vh; top: 0%;}
     #section2 .about_title {left: 3.5%;}
-    #section2 .about_wrap .about_item {height: 70%;}
+    #section2 .about_wrap {top: 30%;}
+    #section2 .about_wrap .about_item {height: 80%; margin-top: 10%;}
+    #section2 .about_wrap .about_item .about_imgWrap {height: 80%;}
+    #section2 .about_wrap .about_item .about_imgWrap .about_img {width: 100%; height: 100%; top: 0%;}
     #section2 .about_wrap .about_item:last-child { height: 100%;}
-    #section2 .about_wrap .about_item:nth-child(1) .about_img {
-        width: 70%;height: 90%;
-        left: 0%;
-    }
-    #section2 .about_wrap .about_item:nth-child(2) .about_img {
-        width: 68%; height: 85%;
-        right: 5%; bottom: 4%;
-    }
-    #section2 .about_wrap .about_item:nth-child(3) .about_img {
-        width: 56%; height: 94%;
-    }
-    #section2 .about_wrap .about_item .about_desc { font-size: 1.4rem;}
-    #section2 .about_item:nth-child(1) .about_desc {top: 63%; left: 35%;}
-    #section2 .about_item:nth-child(2) .about_desc {top: 12%; left: -16%;}
-    #section2 .about_item:nth-child(3) .about_desc {bottom: 13%; left: 3%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {right: 0%;}
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {height: 94%;}
+    #section2 .about_wrap .about_item .about_desc { font-size: 1.7rem; text-align: center; left: 0%;}
+    #section2 .about_item:nth-child(1) .about_desc {top: 81%;}
+    #section2 .about_item:nth-child(2) .about_desc {top: 81%;}
+    #section2 .about_item:nth-child(3) .about_desc {bottom: 11%;}
     #section2 .about_item .about_desc span {text-indent: 0%;}
     
     /* section3 work */
@@ -293,25 +287,26 @@
 
 
     /* section4 more */
-    #section4 {margin-bottom: 270vh;}
+    #section4 {margin-bottom: 180vh;}
     #section4 .more_wrap {opacity: 1; margin-top: -10%;}
-    #section4 .more_arrow {top: 19%; left: 1%; width: 62px; height: 63px;}
+    #section4 .more_container {height: 460px;}
+    #section4 .more_arrow {top: 30px; left: 7px; width: 62px; height: 63px;}
     #section4 .more_title {font-size: 85px; top: 0%; left: 13%;}
     #section4 .more_item {height: 95%;}
     #section4 .more_item .more_descwrap .more_subtitle {font-size: 6vw; top: 12%; right: 11%;}
     #section4 .more_item .more_descwrap .more_desc {
-        font-size: 2.4vw;
-        top: 57%; right: -39%;
+        font-size: 2.5vw;
+        top: 56%; right: -42%;
     }
-    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 59%; right: -43%;}
-    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 60%; right: -44%;}
-    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 61%; right: -45%;}
-    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 52%; right: -32%;}
-    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 52%; right: -33%;}
-    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 52%; right: -33%;}
-    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 52%; right: -32%;}
-    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 52%; right: -33%;}
-    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 52%; right: -33%;}
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 59%; right: -46%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 60%; right: -47%;}
+    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 61%; right: -47%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 52%; right: -35%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 52%; right: -36%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 52%; right: -36%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 52%; right: -34%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 51%; right: -35%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 52%; right: -35%;}
     #section4 .more_item .more_imgwrap {width: 77%;}
     #section4 .more_item:nth-child(4) .more_imgwrap .more_view {background-size: 280px;}
 }
@@ -320,27 +315,27 @@
 @media (max-width: 480px){
     
     /* nav */
-    .small_nav .ham {width: 5.5%;}
+    .small_nav .ham {width: 6%;}
 
     /* section1 intro */
-    #section1 span.intro_TRL {top: -80%;}
-    #section1 span.intro_RTB {bottom: -32%;}
-    #section1 span.intro_BLR {bottom: -81%;}
-    #section1 span.intro_LTB {top: -32%;}
+    #section1 span.intro_TRL {top: -79%;}
+    #section1 span.intro_RTB {bottom: -42%;}
+    #section1 span.intro_BLR {bottom: -78%;}
+    #section1 span.intro_LTB {top: -43%;}
 
     /* section2 about me */
     #section2 {height: 250vh; margin-bottom: 200vh;}
     #section2 .about_container {top: 15%;}
-    #section2 .about_wrap .about_item {height: 90%;}
+    #section2 .about_wrap .about_item {height: 90%; margin-top: 0%;}
     #section2 .about_title {text-align: center; left: 0%; font-size: 32vw;}
+    #section2 .about_wrap .about_item .about_imgWrap {height: 100%;}
     #section2 .about_wrap .about_item .about_imgWrap .about_img {width: 100%;}
-    #section2 .about_wrap .about_item:nth-child(1) .about_img {height: 70%; top: 5%;}
-    #section2 .about_wrap .about_item:nth-child(2) .about_img {height: 65%; right: 0%; bottom: 7%;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {height: 61%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {height: 57%;}
     #section2 .about_wrap .about_item:nth-child(3) .about_img {height: 70%;}
-    #section2 .about_wrap .about_item .about_desc {text-align: center;}
-    #section2 .about_item:nth-child(1) .about_desc {top: 76%; left: 0%;}
-    #section2 .about_item:nth-child(2) .about_desc {top: 9%; left: -1%;}
-    #section2 .about_item:nth-child(3) .about_desc {left: 0%; bottom: 71%;}
+    #section2 .about_item:nth-child(1) .about_desc {top: 63%;}
+    #section2 .about_item:nth-child(2) .about_desc {top: 59%;}
+    #section2 .about_item:nth-child(3) .about_desc {bottom: 18%;}
     #section2 .skill li .another .icon {background-size: 70px;}
 
     /* section3 work */
@@ -355,7 +350,7 @@
     #section3 .work_item:nth-child(3) .work_descwrap .view_site {top: 90%;}
 
     /* section4 more */
-    #section4 {height: 800vw; margin-bottom: 250vh;}
+    #section4 {height: 800vw;}
     #section4 .more_wrap {margin-top: 30%;}
     #section4 .more_title_wrap {top: 0%; height: 5%;}
     #section4 .more_arrow { width: 46px; height: 45px; top: 12%; left: 2%;}
@@ -390,17 +385,18 @@
     /* section1  intro*/
     #section1 span {font-size: 4.3vw;}
     #section1 span.intro_TRL {top: -78%;}
-    #section1 span.intro_RTB {bottom: -39%; right: -33%;}
+    #section1 span.intro_RTB {bottom: -48%; right: -33%;}
     #section1 span.intro_BLR {bottom: -78%;}
-    #section1 span.intro_LTB {top: -39%; left: -33%;}
+    #section1 span.intro_LTB {top: -48%; left: -33%;}
 
     /* section2 about me */
+    #section2 {margin-bottom: 130vh;}
     #section2 .about_title {font-size: 34vw;}
+    #section2 .about_wrap .about_item {height: 60%;}
     #section2 .about_wrap .about_item:last-child {margin-top: 10%;}
     #section2 .about_wrap .about_item:nth-child(1) .about_img {height: 60%;}
     #section2 .about_wrap .about_item:nth-child(2) .about_img {height: 55%; bottom: 15%;}
     #section2 .about_wrap .about_item .about_desc {font-size: 5vw;}
-    #section2 .about_item:nth-child(1) .about_desc {top: 67%;}
     #section2 .skill li .another {height: 90px;}
     #section2 .skill li p {font-size: 4rem;}
     #section2 .skill li .another .icon {width: 60px; height: 60px; background-size: 50px;}
@@ -417,10 +413,9 @@
     #section3 .work_item:nth-child(3) .work_descwrap .view_site {top: 93%;}
 
     /* section4 more*/
-    #section4 {margin-bottom: 160vh;}
+    #section4 {margin-bottom: 120vh;}
     #section4 .more_arrow {width: 30px; height: 30px; top: 14.5%;}
     #section4 .more_title {font-size: 45px;}
-    /* #section4 .more_item {height: 10%;} */
     #section4 .more_item:nth-child(4) .more_imgwrap .more_view {background-size: 250px;}
 
 }
