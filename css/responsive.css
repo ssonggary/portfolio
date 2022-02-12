@@ -15,19 +15,21 @@
     nav ul li {font-size: 1.5rem;}
     
     /* section1 intro  */
-    #section1 span {font-size: 3vw;}
-    #section1 span.intro_RTB {bottom: -7%; right: -23%;}
-    #section1 span.intro_LTB {top: -8%; left: -23%;}
+    #section1 span {font-size: 3.5vw;}
+    #section1 span.intro_TRL {top: -82%;}
+    #section1 span.intro_RTB {bottom: -16%; right: -27%;}
+    #section1 span.intro_BLR {bottom: -83%;}
+    #section1 span.intro_LTB {top: -16%; left: -27%;}
 
     /* section2 about me */
     #section2 {margin-bottom: 400vh;}
     #section2 .about_title {top: 25%; left: 3.5%;}
-    #section2 .about_wrap .about_item:nth-child(1) .about_img {width: 75%; height: 61%; top: 10%; left: 16%;}
-    #section2 .about_wrap .about_item:nth-child(2) .about_img {width: 70%; height: 60%; bottom: 11%;}
-    #section2 .about_wrap .about_item:nth-child(3) .about_img {width: 70%; height: 75%; right: -1%;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {width: 90%; height: 60%; top: 10%; left: 14%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {width: 80%; height: 50%; bottom: 21%;}
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {width: 80%; height: 70%; right: -1%;}
     #section2 .about_wrap .about_item .about_desc {font-size: 1.7rem;}
     #section2 .about_item:nth-child(2) .about_desc {left: -20%;}
-    #section2 .about_item:nth-child(3) .about_desc {bottom: 8%; left: -27%;}
+    #section2 .about_item:nth-child(3) .about_desc {bottom: 11%; left: -37%;}
     #section2 .skill_title {font-size: 3.5rem;}
     #section2 .skill li p {margin-top: -6%;}
     #section2 .skill li:last-child p {margin-top: -2%;}
@@ -46,23 +48,23 @@
     #section3 .work_item .work_descwrap .view_site {font-size: 2.5vw;}
 
     /* section4 more */
-    #section4 {margin-bottom: 550vh;}
-    #section4 .more_wrap {margin-left: 10%;}
-    #section4 .more_arrow {top: 4.3%; left: 4%; width: 70px; height: 71px;}
-    #section4 .more_title {font-size: 103px;}
-    #section4 .more_container {height: 448px;}
-    #section4 .more_item .more_descwrap .more_subtitle {top: 12%; right: 8%;}
-    #section4 .more_item .more_descwrap .more_desc {top: 54%; right: -41%; font-size: 1.4vw;}
+    #section4 {margin-bottom: 550vh; width: 400%;}
+    #section4 .more_wrap {margin-left: 10%; width: 400%;}
+    #section4 .more_arrow {width: 86px; height: 84px; top: 34px; left: 85px;}
+    #section4 .more_title {font-size: 125px; left: 184px;}
+    #section4 .more_container {height: 600px;}
+    #section4 .more_item .more_descwrap .more_subtitle {top: 14%; right: 8%;}
+    #section4 .more_item .more_descwrap .more_desc {top: 54%; right: -42%; font-size: 1.9vw;}
     
-    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 57%; right: -45%;}
-    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 58%; right: -46%;}
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 57%; right: -46%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 58%; right: -47%;}
     #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 58%; right: -47%;}
-    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 50%; right: -35%;}
-    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 51%; right: -36%;}
-    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 50%; right: -35%;}
-    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 50%; right: -35%;}
-    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 50%; right: -35%;}
-    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 50%; right: -35%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 50%; right: -36%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 51%; right: -37%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 50%; right: -36%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 50%; right: -36%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 50%; right: -36%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 50%; right: -36%;}
     
     #section4 .more_item .more_imgwrap {width: 80%; height: 75%;}
 
@@ -89,18 +91,18 @@
     .small_nav.active {top: 0%;}
     .small_nav .logo {
         position: relative; z-index: 2000;
-        width: 30px; height: 30px;
+        width: 40px; height: 40px;
         margin: 10px;
-        font-size: 1.8rem;
-        text-align: center; line-height: 30px;
+        font-size: 2rem;
+        text-align: center; line-height: 40px;
         border: 1px solid #333;
     }
     .small_nav .ham {
         margin: 10px;
-        margin-top: 15px;
+        margin-top: 24px;
         display: block;
         position: relative; z-index: 2000;
-        width: 3.5%;
+        width: 4.5%;
         cursor: pointer;
         transition: 0.8s;
     }
@@ -133,10 +135,10 @@
     .ham.active span:nth-child(3){position: absolute; top: 9px; transform: rotate(-45deg);}
 
     /* section1 intro  */
-    #section1 span.intro_TRL {top: -81%; }
-    #section1 span.intro_RTB {bottom: -23%; right: -23%;}
-    #section1 span.intro_BLR {bottom: -82%;}
-    #section1 span.intro_LTB {top: -23.5%;}
+    #section1 span.intro_TRL {top: -81%;}
+    #section1 span.intro_RTB {bottom: -30%;}
+    #section1 span.intro_BLR {bottom: -81%;}
+    #section1 span.intro_LTB {top: -30.5%;}
 
     /* section2 about me */
     #section2 {width: 100%; top: 80%;}
@@ -155,13 +157,13 @@
         margin-left: 0;
         padding: 1%;
     }
-    #section2 .about_wrap .about_item:nth-child(1) .about_img {width: 60%; height: 70%; left: 5%;}
-    #section2 .about_wrap .about_item:nth-child(2) .about_img {width: 65%; height: 70%; bottom: 5%;}
-    #section2 .about_wrap .about_item:nth-child(3) .about_img {width: 50%; height: 75%; right: 0%;}
-    #section2 .about_item:nth-child(1) .about_desc { top: 50%; left: 36%; }
-    #section2 .about_item:nth-child(2) .about_desc { top: 13%; left: -18%;}
-    #section2 .about_item:nth-child(3) .about_desc { bottom: 11%; left: 4%;}
-    #section2 .skill_title {margin-top: -1%;}
+    #section2 .about_wrap .about_item:nth-child(1) .about_img {width: 70%; height: 65%; left: 0%;}
+    #section2 .about_wrap .about_item:nth-child(2) .about_img {width: 75%; height: 65%; bottom: 18%;}
+    #section2 .about_wrap .about_item:nth-child(3) .about_img {width: 62%; height: 70%; right: 0%; bottom: 10%;}
+    #section2 .about_item:nth-child(1) .about_desc { top: 49%; left: 36%; }
+    #section2 .about_item:nth-child(2) .about_desc { top: 13%; left: -16%;}
+    #section2 .about_item:nth-child(3) .about_desc { bottom: 67%; left: 3%;}
+    #section2 .skill_title {font-size: 4rem;}
     .about_item .about_imgWrap {
         transform: translateY(15%);
         transition: all 0.8s cubic-bezier(0, 0.66, 0.38, 1.01);
@@ -170,6 +172,7 @@
         transform: translateY(10%);
         transition: all 1s cubic-bezier(0, 0.66, 0.38, 1.01);
     }
+    #section2 .skill li:last-child p { margin-top: -1%;}
 
     /* section3 work */
     #section3 {height: 250vw;}
@@ -203,7 +206,7 @@
     #section4 {
         width: 100%;
         margin-left: 0%;
-        margin-bottom: 320vh;
+        margin-bottom: 260vh;
     }
     #section4 .more_wrap {
         width: 100%; height: 100%;
@@ -213,31 +216,32 @@
     #section4 .more_wrap.fixed {position: absolute;}
     #section4 .more_title_wrap {top: 6%;}
     #section4 .more_arrow{
-        top: 23.3%; left: 3%;
+        top: 18px; left: 22px;
         width: 75px; height: 73px;
     }
     #section4 .more_wrap.fixed .more_arrow {position: absolute;}
-    #section4 .more_title{left: 14%;}
+    #section4 .more_title{font-size: 100px; left: 111px;}
     #section4 .more_wrap.fixed .more_title{position: absolute;}
     #section4 .more_container{
+        height: 500px;
         flex-wrap: wrap;
-        left: 0%;
+        left: 0%; top: 20%;
     }
     #section4 .more_item {width: 50%; height: 100%;}
     #section4 .more_item .more_descwrap .more_subtitle{ top: 13%; right: 19%; font-size: 5vw;}
     #section4 .more_item .more_descwrap .more_desc{
-        font-size: 2vw;
-        top: 56%; right: -24%;
+        font-size: 2.2vw;
+        top: 56%; right: -28%;
     }
-    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 59%; right: -27%;}
-    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 60%; right: -28%;}
-    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 60%; right: -29%;}
-    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 52%; right: -19%;}
-    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 52%; right: -19%;}
-    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 52%; right: -19%;}
-    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 52%; right: -19%;}
-    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 52%; right: -19%;}
-    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 52%; right: -19%;}
+    #section4 .more_item:nth-child(2) .more_descwrap .more_desc { top: 59%; right: -32%;}
+    #section4 .more_item:nth-child(3) .more_descwrap .more_desc { top: 59%; right: -33%;}
+    #section4 .more_item:nth-child(4) .more_descwrap .more_desc { top: 60%; right: -34%;}
+    #section4 .more_item:nth-child(5) .more_descwrap .more_desc { top: 51%; right: -22%;}
+    #section4 .more_item:nth-child(6) .more_descwrap .more_desc { top: 52%; right: -23%;}
+    #section4 .more_item:nth-child(7) .more_descwrap .more_desc { top: 52%; right: -23%;}
+    #section4 .more_item:nth-child(8) .more_descwrap .more_desc { top: 51%; right: -22%;}
+    #section4 .more_item:nth-child(9) .more_descwrap .more_desc { top: 51%; right: -22%;}
+    #section4 .more_item:nth-child(10) .more_descwrap .more_desc { top: 51%; right: -22%;}
     #section4 .more_item .more_imgwrap{width: 70%;}
     #section4 .more_item:nth-child(4) .more_imgwrap .more_view{background-size: 335px;}
 
@@ -249,14 +253,13 @@
 /* 화면너비 0-600px */
 @media (max-width: 600px){
     /* nav */
-    .small_nav .ham {width: 4.5%;}
+    .small_nav .ham {width: 5.5%; margin-top: 22px;}
     
     /* section1 intro*/
     #section1 span {font-size: 4vw;}
-    #section1 span.intro_TRL {top: -81%;}
-    #section1 span.intro_RTB {bottom: -22.5%; right: -31%;}
-    #section1 span.intro_RTB {bottom: -21%;}
-    #section1 span.intro_LTB {top: -21.5%; left: -31%;}
+    #section1 span.intro_TRL {top: -80%;}
+    #section1 span.intro_RTB {bottom: -35%; right: -31%;}
+    #section1 span.intro_LTB {top: -34.5%; left: -31%;}
 
     /* section2 about me*/
     #section2{margin-bottom: 310vh;}

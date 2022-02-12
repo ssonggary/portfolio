@@ -166,9 +166,9 @@ nav ul li.show a {font-weight: 800; color: #000;}
     word-break: keep-all;
 }
 #section1 span.intro_TRL {top: -86%; right: 0%; width: 100%; text-align: right;}
-#section1 span.intro_RTB {bottom: 0%; right: -19%; transform: rotate(-90deg);}
+#section1 span.intro_RTB {bottom: -4%; right: -19%; transform: rotate(-90deg);}
 #section1 span.intro_BLR {bottom: -86%; left: 0%; transform: rotate(-180deg); width: 100%; text-align: right;}
-#section1 span.intro_LTB {top: -1%; left: -19%; transform: rotate(90deg);}
+#section1 span.intro_LTB {top: -4%; left: -19%; transform: rotate(90deg);}
 /* //intro */
 
 /* section2 about me */
@@ -258,12 +258,12 @@ nav ul li.show a {font-weight: 800; color: #000;}
     word-break: keep-all;
 }
 #section2 .about_item .about_desc span {display: block; text-indent: 5%;}
-#section2 .about_item:nth-child(1) .about_desc { top: 64%; left: 60%;}
-#section2 .about_item:nth-child(2) .about_desc { top: 16%; left: -7%; text-align: center;}
-#section2 .about_item:nth-child(3) .about_desc { bottom: 10%; left: -14%;}
+#section2 .about_item:nth-child(1) .about_desc { top: 65%; left: 60%;}
+#section2 .about_item:nth-child(2) .about_desc { top: 19%; left: -6%; text-align: center;}
+#section2 .about_item:nth-child(3) .about_desc { bottom: 13%; left: -3%;}
 
 #section2 .skill_title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 #section2 .skill {
@@ -278,7 +278,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
     align-items: center;
 }
 #section2 .skill li {
-    font-size: 1.5rem;
+    font-size: 2rem;
     flex-basis: 50%;
     text-align: center;
     /* border: 1px solid #ccc; */
@@ -286,7 +286,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
 }
 #section2 .skill li:last-child{flex-basis: 100%;}
 #section2 .skill li p {
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 #section2 .skill li .another {
@@ -296,7 +296,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
     align-items: center;
 }
 #section2 .skill li .another .icon {
-    width: 80px; height: 80px;
+    width: 90px; height: 90px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -439,7 +439,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
     /* background-color: blueviolet; */
 }
 #section4 .more_arrow {
-    position: absolute; top: 4.3%; left: 5.5%;
+    position: absolute; top: 42px; left: 100px;
     width: 106px; height: 107px;
     /* background-color: burlywood; */
 }
@@ -448,7 +448,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
     width: 100%; height: 100%;
 }
 #section4 .more_title {
-    position: absolute; top: -2%; left: 11.5%;
+    position: absolute; top: -19px; left: 226px;
     font-size: 153px;
 }
 #section4 .more_wrap.fixed .more_title {position: fixed;}
