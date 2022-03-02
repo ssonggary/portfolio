@@ -280,17 +280,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
     justify-content: space-around;
     align-items: center;
 }
-#section2 .skill li .another .icon {
-    width: 90px; height: 90px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-#section2 .skill li .another .icon:nth-child(1) {background-image: url(../img/icon01.png);}
-#section2 .skill li .another .icon:nth-child(2) {background-image: url(../img/icon02.png);}
-#section2 .skill li .another .icon:nth-child(3) {background-image: url(../img/icon03.png);}
-#section2 .skill li .another .icon:nth-child(4) {background-image: url(../img/icon04.png);}
-#section2 .skill li .another .icon:nth-child(5) {background-image: url(../img/icon05.png);}
+#section2 .skill li .another .icon {width: 90px; height: 90px;}
 
 /* 개별적으로 나타내기 */
 .about_item .about_imgWrap {
