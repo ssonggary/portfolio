@@ -40,7 +40,7 @@ $(document).ready(function(){
             //section1
             if( scrollTop >= section1 ){
                 
-                $("#section1").find(".intro_imgWrap, .intro_desc").animate({
+                $("#section1").find("div.intro_imgWrap, p.intro_desc").animate({
                     opacity: 0
                 },800, function(){
                     $(this).addClass("active");

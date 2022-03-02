@@ -157,7 +157,7 @@ nav ul li.show a {font-weight: 800; color: #000;}
 }
 #section1 .intro_desc.active{position: absolute;}
 
-#section1 span {
+#section1 .intro_desc span {
     position: absolute;
     display: block;
     font-size: 2.5vw;
