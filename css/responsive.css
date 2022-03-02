@@ -15,10 +15,10 @@
     nav ul li {font-size: 1.5rem;}
     
     /* section1 intro  */
-    #section1 span {font-size: 3.5vw;}
+    #section1 .intro_desc span {font-size: 3.5vw;}
     #section1 span.intro_TRL {top: -82%;}
     #section1 span.intro_RTB {bottom: -16%; right: -27%;}
-    #section1 span.intro_BLR {bottom: -83%;}
+    #section1 span.intro_BLR {bottom: -82%;}
     #section1 span.intro_LTB {top: -16%; left: -27%;}
 
     /* section2 about me */
@@ -257,7 +257,7 @@
     .small_nav .ham {width: 5.5%; margin-top: 22px;}
     
     /* section1 intro*/
-    #section1 span {font-size: 4vw;}
+    #section1 .intro_desc span {font-size: 4vw;}
     #section1 span.intro_TRL {top: -80%;}
     #section1 span.intro_RTB {bottom: -35%; right: -31%;}
     #section1 span.intro_LTB {top: -34.5%; left: -31%;}
@@ -386,7 +386,7 @@
     .small_nav .ham {width: 8%;}
     
     /* section1  intro*/
-    #section1 span {font-size: 4.3vw;}
+    #section1 .intro_desc span {font-size: 4.3vw;}
     #section1 span.intro_TRL {top: -78%;}
     #section1 span.intro_RTB {bottom: -48%; right: -33%;}
     #section1 span.intro_BLR {bottom: -78%;}
