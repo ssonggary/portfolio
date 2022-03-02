@@ -30,7 +30,7 @@
     #section2 .about_wrap .about_item .about_desc {font-size: 1.7rem;}
     #section2 .about_item:nth-child(2) .about_desc {left: -20%; top: 20%;}
     #section2 .about_item:nth-child(3) .about_desc {bottom: 12%; left: -36%;}
-    #section2 .skill_title {font-size: 3.5rem;}
+    #section2 .skill_title {font-size: 4.5rem;}
     #section2 .skill li p {margin-top: -6%;}
     #section2 .skill li:last-child p {margin-top: -2%;}
 
